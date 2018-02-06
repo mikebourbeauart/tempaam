@@ -7,7 +7,7 @@ from Qt import QtWidgets
 
 import options_tab_contents
 
-class OptionsTab( QtWidgets.QTabWidget ):
+class OptionsTab(QtWidgets.QTabWidget):
 	''' 
 	Fills publish UI with an options tab widget
 	''' 

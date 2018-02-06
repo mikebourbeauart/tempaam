@@ -1,6 +1,8 @@
+import os
 
 from Qt import QtWidgets
 from Qt import QtCore
+from Qt import QtGui
 
 class FoldersWidget(QtWidgets.QTreeWidget):
 
@@ -21,6 +23,25 @@ class FoldersWidget(QtWidgets.QTreeWidget):
 		self.setMinimumWidth(200)
 		self.setMaximumWidth(600)
 
+		self.create_gui()
+		self.create_layout()
+
+	def create_gui(self):
+		# Browse folders button
+		self.btn_browse_folders = QtWidgets.QPushButton(self)
+		self.icon = QtGui.QIcon(QtGui.QPixmap(os.path.join(self.icon_dir, 'ftrack_browse_folders.png')))
+		self.btn_browse_folders.setIcon(self.icon)
+		self.btn_browse_folders.setIconSize(QtCore.QSize(30, 30))
+		self.btn_browse_folders.setMaximumHeight(50)
+		self.btn_browse_folders.setStyleSheet(push_button_w_icon_css.css)
+		self.btn_browse_folders.setObjectName('aamBrowseFolders')
+
+	def create_layout(self):
+		self.main_layout = QtWidgets.QVBoxLayout(self)		
+		self.main_layout.addWidget(self.btn_browse_folders)
+		self.main_layout.addWidget(self)
+
+		self.setLayout(self.main_layout)
 
 	def dpi(self):
 		"""

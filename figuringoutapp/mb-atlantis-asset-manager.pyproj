@@ -26,16 +26,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="gui\main_window.py" />
-    <Compile Include="gui\css\main_window_css.py">
+    <Compile Include="gui\resource\css\main_window_css.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="gui\css\popup_window_css.py">
+    <Compile Include="gui\resource\css\popup_window_css.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="gui\css\push_button_w_icon_css.py">
+    <Compile Include="gui\resource\css\push_button_w_icon_css.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="gui\css\__init__.py">
+    <Compile Include="gui\resource\css\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="packages\cmds.py">
@@ -90,6 +90,9 @@
     <Compile Include="packages\mbqt\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="packages\resources.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="packages\uitls.py">
       <SubType>Code</SubType>
     </Compile>
@@ -109,7 +112,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="gui\" />
-    <Folder Include="gui\css\" />
+    <Folder Include="gui\resource\css\" />
+    <Folder Include="gui\resource\" />
+    <Folder Include="gui\resource\icons\" />
     <Folder Include="packages\" />
     <Folder Include="gui\publish\" />
     <Folder Include="packages\mbqt\" />

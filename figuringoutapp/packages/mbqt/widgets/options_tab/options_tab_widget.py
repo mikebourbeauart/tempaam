@@ -1,5 +1,6 @@
 """
-Module for options tab within publish tab
+options_tab_widget
+^^^^^^^^^^^^^^^^^^
 """
 
 
@@ -9,7 +10,7 @@ from Qt	import QtCore
 import options_tab
 
 class OptionsTabWidget(QtWidgets.QTabWidget):
-	'''Fills selection info tab with an options tab widget
+	'''Container for options parameters and comment/publish
 	''' 
 	
 	def __init__(self):
@@ -25,7 +26,7 @@ class OptionsTabWidget(QtWidgets.QTabWidget):
 	#------------------------------------------------------
 	def create_gui( self ):
 		self.addTab(options_tab.OptionsTab(), "Options")
-		pass
+
 
 	#------------------------------------------------------
 	def create_layout( self ):

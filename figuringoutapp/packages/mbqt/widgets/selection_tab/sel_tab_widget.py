@@ -30,7 +30,6 @@ class SelTabWidget(QtWidgets.QTabWidget):
 	#------------------------------------------------------
 	def create_gui( self ):
 		self.addTab(sel_tab_info.SelTabInfo(), "Selection Info")
-		pass
 
 	#------------------------------------------------------
 	def create_layout( self ):

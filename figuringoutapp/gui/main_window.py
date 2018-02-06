@@ -14,14 +14,10 @@ from Qt import QtGui
 from Qt import QtWidgets
 
 MB_AAM_PATH = os.path.join('D:/Git_Stuff/temp-aam/figuringoutapp')
-#MB_AAM_PATH = os.path.join('C:/Users/mike.bourbeau/Desktop/figuringoutapp/figuringoutapp', 'modules', 'publis')
-
 if not MB_AAM_PATH in sys.path:
 	sys.path.append(MB_AAM_PATH)
 
 packages_path = os.path.join('D:/Git_Stuff/temp-aam/figuringoutapp/', 'packages')
-#MB_AAM_PATH = os.path.join('C:/Users/mike.bourbeau/Desktop/figuringoutapp/figuringoutapp', 'modules', 'publis')
-
 if not packages_path in sys.path:
 	sys.path.append(packages_path)
 
@@ -59,6 +55,7 @@ class MainAAM(QtWidgets.QWidget):
 		self.le_address_bar.setReadOnly(True)
 		self.le_address_bar.setObjectName('aamAddressBar')
 
+		# Browse folders button
 		self.btn_browse_folders = QtWidgets.QPushButton(self)
 		self.icon = QtGui.QIcon(QtGui.QPixmap(os.path.join(self.icon_dir, 'ftrack_browse_folders.png')))
 		self.btn_browse_folders.setIcon(self.icon)
@@ -66,6 +63,15 @@ class MainAAM(QtWidgets.QWidget):
 		self.btn_browse_folders.setMaximumHeight(50)
 		self.btn_browse_folders.setStyleSheet(push_button_w_icon_css.css)
 		self.btn_browse_folders.setObjectName('aamBrowseFolders')
+
+		# Refresh Button
+		self.btn_refresh = QtWidgets.QPushButton(self)
+		self.icon = QtGui.QIcon(QtGui.QPixmap(os.path.join(self.icon_dir, 'aam_refresh.png')))
+		self.btn_refresh.setIcon(self.icon)
+		self.btn_refresh.setIconSize(QtCore.QSize(30, 30))
+		self.btn_refresh.setMaximumHeight(50)
+		self.btn_refresh.setStyleSheet(push_button_w_icon_css.css)
+		self.btn_refresh.setObjectName('aamRefresh')
 
 		# self.tv_browse_folders = Browser.Build(self)
 
@@ -86,6 +92,7 @@ class MainAAM(QtWidgets.QWidget):
 		title_image_layout.addWidget(self.title_image)
 		title_image_layout.addWidget(self.le_address_bar)
 		title_image_layout.addWidget(self.btn_browse_folders)
+		title_image_layout.addWidget(self.btn_refresh)
 
 
 
