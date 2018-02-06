@@ -51,12 +51,12 @@ class PubTab(QtWidgets.QWidget):
 		self.btn_refresh.setMaximumWidth(40)
 		
 		self.trw_folders = mbqt.FoldersWidget()
-		self.trw_publish = mbqt.TreeWidget()
+		self.trw_publish = mbqt.AssetsWidget()
 
 		self.tw_selection_info = mbqt.SelTabWidget()
 		self.tw_selection_info.addTab(pub_selection_tab_info.Build(), "Selection Info")
 
-		self.tw_options = mbqt.OptionTabWidget()
+		self.tw_options = mbqt.OptionsTabWidget()
 		self.tw_options.addTab(pub_options_tab.Build(), "Options")
 
 

@@ -7,22 +7,19 @@ from Qt import QtWidgets
 from Qt	import QtCore
 
 
-class SelTabWidget(QtWidgets.QTabWidget):
+class OptionsTabWidget(QtWidgets.QTabWidget):
 	''' 
 	Fills selection info tab with an options tab widget
 
 	''' 
 	
 	def __init__(self):
-		super( SelTabWidget, self ).__init__()
+		super(OptionsTabWidget, self).__init__()
 
-
-		self.setMinimumWidth(200)
-		self.setMaximumWidth(200)
-
+		self.setMinimumHeight(120)
+		
 		self.create_gui()
 		self.create_layout()
-
 
 
 	#------------------------------------------------------

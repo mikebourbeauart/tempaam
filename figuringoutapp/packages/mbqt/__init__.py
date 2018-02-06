@@ -1,4 +1,4 @@
 from mbqt.widgets.folders_widget import FoldersWidget
-from mbqt.widgets.tree_widget import TreeWidget
-from mbqt.widgets.tab_widget import SelTabWidget
-from mbqt.widgets.tab_widget import OptionTabWidget
+from mbqt.widgets.assets_widget import AssetsWidget
+from mbqt.widgets.selection_tab import SelTabWidget
+from mbqt.widgets.options_tab import OptionsTabWidget

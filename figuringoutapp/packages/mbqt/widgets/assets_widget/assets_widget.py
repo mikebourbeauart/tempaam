@@ -2,10 +2,10 @@
 from Qt import QtWidgets
 from Qt import QtCore
 
-class TreeWidget(QtWidgets.QTreeWidget):
+class AssetsWidget(QtWidgets.QTreeWidget):
 
 	def __init__(self):
-		super(TreeWidget, self).__init__()
+		super(AssetsWidget, self).__init__()
 
 		self._dpi = 1
 

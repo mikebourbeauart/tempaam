@@ -41,16 +41,22 @@
     <Compile Include="packages\cmds.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="packages\mbqt\widgets\folders_widget\folders_item.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="packages\mbqt\widgets\folders_widget\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="packages\mbqt\widgets\tab_widget\option_tab_widget.py" />
-    <Compile Include="packages\mbqt\widgets\tab_widget\sel_tab_widget.py" />
-    <Compile Include="packages\mbqt\widgets\tab_widget\__init__.py">
+    <Compile Include="packages\mbqt\widgets\options_tab\options_tab_widget.py" />
+    <Compile Include="packages\mbqt\widgets\options_tab\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="packages\mbqt\widgets\selection_tab\sel_tab_widget.py" />
+    <Compile Include="packages\mbqt\widgets\selection_tab\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="packages\mbqt\widgets\folders_widget\folders_widget.py" />
-    <Compile Include="packages\mbqt\widgets\tree_widget\tree_widget.py">
+    <Compile Include="packages\mbqt\widgets\assets_widget\assets_widget.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="gui\publish\pub_options_tab.py" />
@@ -63,10 +69,10 @@
     <Compile Include="gui\publish\pub_tab.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="packages\mbqt\widgets\tree_widget\tree_widget_item.py">
+    <Compile Include="packages\mbqt\widgets\assets_widget\assets_item.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="packages\mbqt\widgets\tree_widget\__init__.py">
+    <Compile Include="packages\mbqt\widgets\assets_widget\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="gui\publish\__init__.py">
@@ -106,8 +112,9 @@
     <Folder Include="packages\mbqt\" />
     <Folder Include="packages\mbqt\widgets\" />
     <Folder Include="packages\mbqt\widgets\folders_widget\" />
-    <Folder Include="packages\mbqt\widgets\tab_widget\" />
-    <Folder Include="packages\mbqt\widgets\tree_widget\" />
+    <Folder Include="packages\mbqt\widgets\selection_tab\" />
+    <Folder Include="packages\mbqt\widgets\options_tab\" />
+    <Folder Include="packages\mbqt\widgets\assets_widget\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
