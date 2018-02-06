@@ -57,14 +57,14 @@ class PubTab(QtWidgets.QWidget):
 		self.asset_splt.addWidget(self.tw_selection_info)
 		self.asset_splt.setChildrenCollapsible(False)
 		self.asset_splt.setStretchFactor(1,1)
-		self.asset_splt.setHandleWidth(10)
+		self.asset_splt.setHandleWidth(5)
 
 		self.vert_splt = QtWidgets.QSplitter(QtCore.Qt.Vertical)
 		self.vert_splt.addWidget(self.asset_splt)
 		self.vert_splt.addWidget(self.tw_options)
 		self.vert_splt.setChildrenCollapsible(False)
 		self.vert_splt.setStretchFactor(0,1)
-		self.vert_splt.setHandleWidth(10)
+		self.vert_splt.setHandleWidth(5)
 
 		self.main_layout = QtWidgets.QVBoxLayout(self)		
 		self.main_layout.addWidget(self.vert_splt)

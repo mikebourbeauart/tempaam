@@ -26,19 +26,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="gui\main_window.py" />
-    <Compile Include="gui\resource\css\main_window_css.py">
+    <Compile Include="packages\mbqt\widgets\assets_widget\assets_tree_widget.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="gui\resource\css\popup_window_css.py">
+    <Compile Include="packages\mbqt\widgets\folders_widget\folders_tree_widget.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="gui\resource\css\push_button_w_icon_css.py">
+    <Compile Include="resource\css\main_window_css.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="gui\resource\css\__init__.py">
+    <Compile Include="resource\css\popup_window_css.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="packages\cmds.py">
+    <Compile Include="resource\css\push_button_w_icon_css.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="resource\css\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cmds.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="packages\mbqt\widgets\folders_widget\folders_item.py">
@@ -90,10 +96,10 @@
     <Compile Include="packages\mbqt\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="packages\resources.py">
+    <Compile Include="resource.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="packages\uitls.py">
+    <Compile Include="uitls.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -112,9 +118,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="gui\" />
-    <Folder Include="gui\resource\css\" />
-    <Folder Include="gui\resource\" />
-    <Folder Include="gui\resource\icons\" />
+    <Folder Include="resource\css\" />
+    <Folder Include="resource\" />
+    <Folder Include="resource\icon\" />
     <Folder Include="packages\" />
     <Folder Include="gui\publish\" />
     <Folder Include="packages\mbqt\" />
