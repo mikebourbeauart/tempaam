@@ -24,7 +24,7 @@ except:
 
 logger = logging.getLogger(__name__)
 
-class Build_AssetTab(QtWidgets.QTabWidget):
+class PrepPopupContents(QtWidgets.QTabWidget):
 	'''Fills prep UI with an options tab widget
 
 	@param parent:
@@ -37,7 +37,7 @@ class Build_AssetTab(QtWidgets.QTabWidget):
 		parent = None, 
 		mTaskTypes = None
 	):
-		super( Build_AssetTab, self ).__init__()
+		super(PrepPopupContents, self).__init__()
 
 		self.parent = parent
 		self.task_types = mTaskTypes

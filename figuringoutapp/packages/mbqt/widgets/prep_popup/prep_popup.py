@@ -16,7 +16,7 @@ import PrepPopupContents
 
 from aamUI.StyleSheets import popup_window
 
-class Build(QtWidgets.QWidget):
+class PrepPopup(QtWidgets.QWidget):
 	'''Builds the PrepAssetPopup
 
 	@param parent           str, 
@@ -41,7 +41,7 @@ class Build(QtWidgets.QWidget):
 		wButtonPosition = None,
 		mTaskTypes = None
 	):
-		super(Build, self).__init__()
+		super(PrepPopup, self).__init__()
 		
 		# Variables
 		self.parent = parent

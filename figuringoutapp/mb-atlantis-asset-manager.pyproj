@@ -26,16 +26,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="gui\main_window.py" />
-    <Compile Include="css\main_window_css.py">
+    <Compile Include="gui\css\main_window_css.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="css\popup_window_css.py">
+    <Compile Include="gui\css\popup_window_css.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="css\push_button_w_icon_css.py">
+    <Compile Include="gui\css\push_button_w_icon_css.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="css\__init__.py">
+    <Compile Include="gui\css\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="packages\cmds.py">
@@ -51,6 +51,9 @@
     <Compile Include="packages\mbqt\widgets\options_tab\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="packages\mbqt\widgets\prep_popup\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="packages\mbqt\widgets\selection_tab\sel_tab_widget.py" />
     <Compile Include="packages\mbqt\widgets\selection_tab\__init__.py">
       <SubType>Code</SubType>
@@ -60,11 +63,11 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="packages\mbqt\widgets\options_tab\options_tab.py" />
-    <Compile Include="gui\publish\prep_model.py" />
+    <Compile Include="packages\mbqt\widgets\assets_widget\prep_model.py" />
     <Compile Include="packages\mbqt\widgets\options_tab\options_tab_contents.py" />
-    <Compile Include="gui\publish\prep_popup.py" />
-    <Compile Include="gui\publish\prep_popup_contents.py" />
-    <Compile Include="gui\publish\prep_view.py" />
+    <Compile Include="packages\mbqt\widgets\prep_popup\prep_popup.py" />
+    <Compile Include="packages\mbqt\widgets\prep_popup\prep_popup_contents.py" />
+    <Compile Include="packages\mbqt\widgets\assets_widget\prep_view.py" />
     <Compile Include="packages\mbqt\widgets\selection_tab\sel_tab_info.py" />
     <Compile Include="gui\publish\pub_tab.py">
       <SubType>Code</SubType>
@@ -106,12 +109,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="gui\" />
-    <Folder Include="css\" />
+    <Folder Include="gui\css\" />
     <Folder Include="packages\" />
     <Folder Include="gui\publish\" />
     <Folder Include="packages\mbqt\" />
     <Folder Include="packages\mbqt\widgets\" />
     <Folder Include="packages\mbqt\widgets\folders_widget\" />
+    <Folder Include="packages\mbqt\widgets\prep_popup\" />
     <Folder Include="packages\mbqt\widgets\selection_tab\" />
     <Folder Include="packages\mbqt\widgets\options_tab\" />
     <Folder Include="packages\mbqt\widgets\assets_widget\" />

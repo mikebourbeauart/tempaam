@@ -9,9 +9,7 @@ from Qt	import QtCore
 import options_tab
 
 class OptionsTabWidget(QtWidgets.QTabWidget):
-	''' 
-	Fills selection info tab with an options tab widget
-
+	'''Fills selection info tab with an options tab widget
 	''' 
 	
 	def __init__(self):
