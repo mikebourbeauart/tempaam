@@ -59,13 +59,13 @@
     <Compile Include="packages\mbqt\widgets\assets_widget\assets_widget.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="gui\publish\pub_options_tab.py" />
+    <Compile Include="packages\mbqt\widgets\options_tab\options_tab.py" />
     <Compile Include="gui\publish\prep_model.py" />
-    <Compile Include="gui\publish\pub_options_tab_contents.py" />
+    <Compile Include="packages\mbqt\widgets\options_tab\options_tab_contents.py" />
     <Compile Include="gui\publish\prep_popup.py" />
     <Compile Include="gui\publish\prep_popup_contents.py" />
     <Compile Include="gui\publish\prep_view.py" />
-    <Compile Include="gui\publish\pub_selection_tab_info.py" />
+    <Compile Include="packages\mbqt\widgets\selection_tab\sel_tab_info.py" />
     <Compile Include="gui\publish\pub_tab.py">
       <SubType>Code</SubType>
     </Compile>

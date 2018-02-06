@@ -6,13 +6,12 @@ Module for options tab within publish tab
 from Qt import QtWidgets
 from Qt	import QtCore
 
-class Build(QtWidgets.QTabWidget):
-	''' 
-	Fills selection info tab with an options tab widget
+class SelTabInfo(QtWidgets.QTabWidget):
+	'''Fills selection info tab with an options tab widget
 	''' 
 	
 	def __init__(self):
-		super( Build, self ).__init__()
+		super(SelTabInfo, self).__init__()
 
 		self.setMaximumWidth(10)
 

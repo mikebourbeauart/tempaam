@@ -5,18 +5,15 @@ Module for options tab within publish tab
 
 from Qt import QtWidgets
 
-import pub_options_tab_contents
+import options_tab_contents
 
-class Build( QtWidgets.QTabWidget ):
+class OptionsTab( QtWidgets.QTabWidget ):
 	''' 
 	Fills publish UI with an options tab widget
 	''' 
 	
-	def __init__( 
-				 self, 
-				 mAssetType = None
-				 ):
-		super( Build, self ).__init__()
+	def __init__(self):
+		super(OptionsTab, self).__init__()
 
 		self.create_gui()
 		self.create_layout()
@@ -28,7 +25,7 @@ class Build( QtWidgets.QTabWidget ):
 
 		self.btn_publish = QtWidgets.QPushButton("Publish")
 		#self.btn_publish.setStyleSheet("background-color: rgb({0},{0},{0});".format(val))
-		self.option_tab_contents = pub_options_tab_contents.Fill()
+		self.option_tab_contents = options_tab_contents.OptionsTabContents()
 
 	#------------------------------------------------------
 	def create_layout( self ):

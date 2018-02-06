@@ -6,6 +6,8 @@ Module for options tab within publish tab
 from Qt import QtWidgets
 from Qt	import QtCore
 
+import sel_tab_info
+
 
 class SelTabWidget(QtWidgets.QTabWidget):
 	''' 
@@ -20,6 +22,8 @@ class SelTabWidget(QtWidgets.QTabWidget):
 		self.setMinimumWidth(200)
 		self.setMaximumWidth(200)
 
+		
+
 		self.create_gui()
 		self.create_layout()
 
@@ -27,7 +31,7 @@ class SelTabWidget(QtWidgets.QTabWidget):
 
 	#------------------------------------------------------
 	def create_gui( self ):
-
+		self.addTab(sel_tab_info.SelTabInfo(), "Selection Info")
 		pass
 
 	#------------------------------------------------------

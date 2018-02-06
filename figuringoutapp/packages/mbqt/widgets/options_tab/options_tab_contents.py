@@ -7,7 +7,7 @@ Context is based on asset type
 from Qt import QtWidgets
 from Qt import QtCore
 
-class Fill( QtWidgets.QWidget ):
+class OptionsTabContents(QtWidgets.QWidget):
 	''' 
 	Fills options tab with contents based on asset selection
 
@@ -17,7 +17,7 @@ class Fill( QtWidgets.QWidget ):
 	''' 
 	
 	def __init__(self):
-		super( Fill, self ).__init__()
+		super(OptionsTabContents, self).__init__()
 		
 		self.setMinimumWidth(600)
 		

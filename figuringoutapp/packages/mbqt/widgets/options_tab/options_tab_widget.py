@@ -6,6 +6,7 @@ Module for options tab within publish tab
 from Qt import QtWidgets
 from Qt	import QtCore
 
+import options_tab
 
 class OptionsTabWidget(QtWidgets.QTabWidget):
 	''' 
@@ -24,7 +25,7 @@ class OptionsTabWidget(QtWidgets.QTabWidget):
 
 	#------------------------------------------------------
 	def create_gui( self ):
-
+		self.addTab(options_tab.OptionsTab(), "Options")
 		pass
 
 	#------------------------------------------------------
