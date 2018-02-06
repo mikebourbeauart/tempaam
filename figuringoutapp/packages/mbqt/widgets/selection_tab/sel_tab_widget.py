@@ -22,8 +22,6 @@ class SelTabWidget(QtWidgets.QTabWidget):
 		self.setMinimumWidth(200)
 		self.setMaximumWidth(200)
 
-		
-
 		self.create_gui()
 		self.create_layout()
 

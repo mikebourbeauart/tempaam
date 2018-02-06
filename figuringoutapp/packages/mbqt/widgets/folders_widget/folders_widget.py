@@ -19,6 +19,7 @@ class FoldersWidget(QtWidgets.QTreeWidget):
 		self.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
 		self.setVerticalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
 		self.setMinimumWidth(200)
+		self.setMaximumWidth(600)
 
 
 	def dpi(self):

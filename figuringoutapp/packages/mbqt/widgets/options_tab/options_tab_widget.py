@@ -18,6 +18,7 @@ class OptionsTabWidget(QtWidgets.QTabWidget):
 		super(OptionsTabWidget, self).__init__()
 
 		self.setMinimumHeight(120)
+		self.setMaximumHeight(300)
 		
 		self.create_gui()
 		self.create_layout()
