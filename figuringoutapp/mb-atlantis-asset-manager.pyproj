@@ -131,6 +131,11 @@
     <Folder Include="packages\mbqt\widgets\options_tab\" />
     <Folder Include="packages\mbqt\widgets\assets_widget\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="resource\icon\aam_banner_left.png" />
+    <Content Include="resource\icon\aam_browse_folders.png" />
+    <Content Include="resource\icon\aam_refresh.png" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>

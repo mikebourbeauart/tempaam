@@ -3,13 +3,15 @@ import os
 
 from Qt import QtGui
 
+import css
+
 PATH = os.path.abspath(__file__)
 DIRNAME = os.path.dirname(PATH)
 RESOURCE_DIRNAME = os.path.join(DIRNAME, "resource")
 
 def get(*args):
 	"""
-	This is a convenience function for returning the resource path.
+	Convenience function for returning the resource path.
 
 	:rtype: str 
 	"""
@@ -17,17 +19,24 @@ def get(*args):
 
 def icon(*args, **kwargs):
 	"""
-	Return an Icon object from the given resource name.
+	Convenience function for returning an Icon object from the given resource name.
 	:rtype: str 
 	"""
 	return Resource().icon(*args, **kwargs)
 
 def pixmap(*args, **kwargs):
 	"""
-	Return a Pixmap object from the given resource name.
+	Convenience function for returning a Pixmap object from the given resource name.
 	:rtype: str 
 	"""
 	return Resource().pixmap(*args, **kwargs)
+
+def style_sheet(*args):
+	"""
+	Convenience function for returning a style sheet css object from the given resource name.
+	:rtype: str 
+	"""
+	return Resource().style_sheet(*args)
 
 class Resource(object):
 	DEFAULT_DIRNAME = RESOURCE_DIRNAME
@@ -66,10 +75,10 @@ class Resource(object):
 		:rtype: QtGui.QIcon
 		"""
 		p = self.pixmap(name, extension=extension, color=color)
-		
+
 		return QtGui.QIcon(p)
 
-	def pixmap(self, name, scope="icons", extension="png", color=None):
+	def pixmap(self, name, scope="icon", extension="png", color=None):
 		"""
 		Return a Pixmap object from the given resource name.
 
@@ -79,6 +88,7 @@ class Resource(object):
 		:rtype: QtWidgets.QPixmap
 		"""
 		path = self.get(scope, name + "." + extension)
+
 		p = QtGui.QPixmap(path)
 
 		#if color:
@@ -86,5 +96,12 @@ class Resource(object):
 
 		return p
 
+	def style_sheet(self, css_mod):
+		"""
+		Return a style sheet css object from the given resource name.
+		:rtype: str 
+		"""
+		imported = getattr(__import__('css', fromlist=[css_mod]), css_mod)
 
+		return imported.css
 

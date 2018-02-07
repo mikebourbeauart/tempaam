@@ -31,8 +31,7 @@ class PubTab(QtWidgets.QWidget):
 		logger.warning('Building Publish tab...')
 
 		self.parent = parent
-		self.setObjectName('aamPublishTab')
-		self.icon_dir = self.parent.icon_dir
+		self.setObjectName('PublishTab')
 
 		# Commands
 		self.create_gui()

@@ -27,17 +27,15 @@ from css import push_button_w_icon_css
 from publish.pub_tab import PubTab
 
 import mbqt
+import resource
 
 class MainAAM(QtWidgets.QWidget):
 	
 	def __init__(self):
 		super(MainAAM, self).__init__()
 
-		self.resize(900, 800)
-		#self.setWindowFlags(QtCore.Qt.FramelessWindowHint)    
-		self.setStyleSheet(main_window_css.css)
-
-		self.icon_dir = 'D:/Git_Stuff/mb-armada/mb_Armada/mb_Armada/assets/icons'
+		self.resize(900, 800)  
+		self.setStyleSheet(resource.style_sheet('main_window_css'))
 
 		self.create_gui()
 		self.create_layout()
@@ -45,32 +43,31 @@ class MainAAM(QtWidgets.QWidget):
 		self.show()
 
 	def create_gui(self):
-		pixmap = QtGui.QPixmap(os.path.join(self.icon_dir, 'aam_banner_left.png')) #fix
 		self.title_image = QtWidgets.QLabel(self)
-		self.title_image.setPixmap(pixmap)
+		self.title_image.setPixmap(resource.pixmap('aam_banner_left'))
 
 		# Address bar
 		self.le_address_bar = QtWidgets.QLineEdit()
-		self.le_address_bar.setText('Path/to/publish')
+		self.le_address_bar.setText('S:/STUDIO_TEAMSPACE/Episodes/Mike_Bourbeau/Maya/Publish/RandomTest')
 		self.le_address_bar.setReadOnly(True)
 		self.le_address_bar.setObjectName('aamAddressBar')
 
 		# Browse folders button
 		self.btn_browse_folders = QtWidgets.QPushButton(self)
-		self.icon = QtGui.QIcon(QtGui.QPixmap(os.path.join(self.icon_dir, 'ftrack_browse_folders.png')))
+		self.icon = resource.icon('aam_browse_folders')
 		self.btn_browse_folders.setIcon(self.icon)
 		self.btn_browse_folders.setIconSize(QtCore.QSize(30, 30))
 		self.btn_browse_folders.setMaximumHeight(50)
-		self.btn_browse_folders.setStyleSheet(push_button_w_icon_css.css)
+		self.btn_browse_folders.setStyleSheet(resource.style_sheet('push_button_w_icon_css'))
 		self.btn_browse_folders.setObjectName('aamBrowseFolders')
 
 		# Refresh Button
 		self.btn_refresh = QtWidgets.QPushButton(self)
-		self.icon = QtGui.QIcon(QtGui.QPixmap(os.path.join(self.icon_dir, 'aam_refresh.png')))
+		self.icon = resource.icon('aam_refresh')
 		self.btn_refresh.setIcon(self.icon)
 		self.btn_refresh.setIconSize(QtCore.QSize(30, 30))
 		self.btn_refresh.setMaximumHeight(50)
-		self.btn_refresh.setStyleSheet(push_button_w_icon_css.css)
+		self.btn_refresh.setStyleSheet(resource.style_sheet('push_button_w_icon_css'))
 		self.btn_refresh.setObjectName('aamRefresh')
 
 		# self.tv_browse_folders = Browser.Build(self)
