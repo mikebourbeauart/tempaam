@@ -3,8 +3,6 @@ import os
 
 from Qt import QtGui
 
-import css
-
 PATH = os.path.abspath(__file__)
 DIRNAME = os.path.dirname(PATH)
 RESOURCE_DIRNAME = os.path.join(DIRNAME, "resource")
@@ -43,10 +41,10 @@ class Resource(object):
 	def __init__(self, *args):
 
 		dirname = ""
-
+		
 		if args:
 			dirname = os.path.join(*args)
-
+			
 		if os.path.isfile(dirname):
 			dirname = os.path.dirname(dirname)
 
@@ -105,3 +103,5 @@ class Resource(object):
 
 		return imported.css
 
+
+		

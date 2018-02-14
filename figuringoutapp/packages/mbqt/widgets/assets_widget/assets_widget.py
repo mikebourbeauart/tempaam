@@ -3,8 +3,9 @@ from Qt import QtWidgets
 from Qt import QtCore
 
 from assets_tree_widget import AssetsTreeWidget
-from css import push_button_w_icon_css
+
 import resource
+
 class AssetsWidget(QtWidgets.QWidget):
 
 	def __init__(self):

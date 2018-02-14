@@ -12,9 +12,6 @@ from Qt import QtWidgets
 
 import mbqt
 
-from publish import pub_selection_tab_info
-from publish import pub_options_tab
-
 try:
 	from mb_logger import mb_logging as logging
 except:

@@ -4,8 +4,7 @@ from Qt import QtWidgets
 from Qt import QtCore
 from Qt import QtGui
 
-from folders_tree_widget import FoldersTreeWidget
-from css import push_button_w_icon_css
+from folders_tree_view import FoldersTreeView
 
 import resource
 
@@ -26,7 +25,7 @@ class FoldersWidget(QtWidgets.QWidget):
 		self.btn_folders_options.setStyleSheet(resource.style_sheet('push_button_w_icon_css'))
 		self.btn_folders_options.setObjectName('aamBrowseFolders')
 
-		self.trw_folders = FoldersTreeWidget()
+		self.trw_folders = FoldersTreeView()
 
 	def create_layout(self):
 		self.main_layout = QtWidgets.QVBoxLayout(self)		

@@ -26,10 +26,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="gui\main_window.py" />
+    <Compile Include="packages\aam_settings\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="packages\mbqt\widgets\assets_widget\assets_tree_widget.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="packages\mbqt\widgets\folders_widget\folders_tree_widget.py">
+    <Compile Include="packages\mbqt\widgets\folders_widget\folders_tree_view.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="resource\css\main_window_css.py">
@@ -99,7 +102,10 @@
     <Compile Include="resource.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="uitls.py">
+    <Compile Include="utils.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -118,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="gui\" />
+    <Folder Include="packages\aam_settings\" />
     <Folder Include="resource\css\" />
     <Folder Include="resource\" />
     <Folder Include="resource\icon\" />

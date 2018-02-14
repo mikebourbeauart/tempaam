@@ -5,17 +5,24 @@ from Qt import QtCore
 from Qt import QtGui
 
 
+import folders_item
 
-class FoldersTreeWidget(QtWidgets.QTreeWidget):
+import utils
+
+class FoldersTreeView(QtWidgets.QTreeView):
 
 	itemDropped = QtCore.Signal(object)
 	itemRenamed = QtCore.Signal(str, str)
 	itemSelectionChanged = QtCore.Signal()
 
 	def __init__(self, parent=None):
-		super(FoldersTreeWidget, self).__init__(parent)
+		super(FoldersTreeView, self).__init__(parent)
 
-		self._dpi = 1
+		self._filter = []
+		self._folders = {}
+		self._isLocked = False
+		self._blockSignals = False
+		self._enableFolderSettings = False
 
 		self._sourceModel = FileSystemModel(self)
 
@@ -36,28 +43,17 @@ class FoldersTreeWidget(QtWidgets.QTreeWidget):
 		self.setMinimumWidth(200)
 		self.setMaximumWidth(600)
 
+		self.setRootPath(utils.asset_builds_root(self))
+
 		self.create_gui()
 		self.create_layout()
+
 
 	def create_gui(self):
 		pass
 
 	def create_layout(self):
 		pass
-
-	def setModel(self, model):
-
-		super(FoldersTreeWidget, self).setModel(model)
-
-		self.selection_model = self.selectionModel()
-
-	def dpi(self):
-		"""
-		Return the dots per inch multiplier.
-
-		:rtype: float
-		"""
-		return self._dpi
 
 	def setDpi(self, dpi):
 		"""
@@ -71,6 +67,36 @@ class FoldersTreeWidget(QtWidgets.QTreeWidget):
 		self.setMinimumWidth(35 * dpi)
 		self.setIconSize(QtCore.QSize(size, size))
 		self.setStyleSheet("height: {size}".format(size=size))
+
+	def folderFromPath(self, path):
+		"""Create a folder item from path
+		:type path: str
+		:rtype: Folder
+		"""
+		folders = self._folders
+		if path not in folders:
+			folders[path] = folders_item.FoldersItem(path, self)
+		return folders[path]
+
+	def indexFromPath(self, path):
+		"""Get the model index from :path:
+		:type path: str
+		:rtype: QtCore.QModelIndex
+		"""
+		index = self.model().sourceModel().index(path)
+		return self.model().mapFromSource(index)
+
+	def setRootPath(self, path):
+		"""Set the model's root :path:
+		:type path: str
+		"""
+		self.model().sourceModel().setRootPath(path)
+		index = self.indexFromPath(path)
+		self.setRootIndex(index)
+
+
+
+
 
 class FileSystemModel(QtWidgets.QFileSystemModel):
 
@@ -133,6 +159,9 @@ class FileSystemModel(QtWidgets.QFileSystemModel):
 					return True
 		return False
 
+
+
+
 	def data(self, index, role):
 		"""
 		:type index: QtCore.QModelIndex
@@ -158,10 +187,10 @@ class FileSystemModel(QtWidgets.QFileSystemModel):
 				dirname = self.filePath(index)
 				folder = self.foldersWidget().folderFromPath(dirname)
 				if folder.exists():
-					if folder.isBold():
-						font = QtGui.QFont()
-						font.setBold(True)
-						return font
+					#if folder.isBold():
+					font = QtGui.QFont()
+					font.setBold(True)
+					return font
 
 		if role == QtCore.Qt.DisplayRole:
 			text = QtWidgets.QFileSystemModel.data(self, index, role)
@@ -219,6 +248,22 @@ class SortFilterProxyModel(QtCore.QSortFilterProxyModel):
 		:type sourceParent:
 		:rtype: bool
 		"""
+
 		index = self.sourceModel().index(sourceRow, 0, sourceParent)
 		path = self.sourceModel().filePath(index)
 		return self.sourceModel().isPathValid(path)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

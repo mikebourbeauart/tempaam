@@ -1,33 +1,35 @@
 import os
 import sys
 
-import os
-
 if "QT_PREFERRED_BINDING" not in os.environ:
 	os.environ["QT_PREFERRED_BINDING"] = os.pathsep.join(
 		["PySide2", "PyQt5", "PySide", "PyQt4"]
 	)
 
-
 from Qt import QtCore
 from Qt import QtGui
 from Qt import QtWidgets
 
-MB_AAM_PATH = os.path.join('D:/Git_Stuff/temp-aam/figuringoutapp')
-if not MB_AAM_PATH in sys.path:
-	sys.path.append(MB_AAM_PATH)
+AAM_PATH = os.path.join('D:/Git_Stuff/temp-aam/figuringoutapp')
+if not AAM_PATH in sys.path:
+	sys.path.append(AAM_PATH)
 
-packages_path = os.path.join('D:/Git_Stuff/temp-aam/figuringoutapp/', 'packages')
-if not packages_path in sys.path:
-	sys.path.append(packages_path)
+PACAKGES_PATH = os.path.join('D:/Git_Stuff/temp-aam/figuringoutapp/', 'packages')
+if not PACAKGES_PATH in sys.path:
+	sys.path.append(PACAKGES_PATH)
 
-from css import main_window_css
-from css import push_button_w_icon_css
+episode_root = 'S:/STUDIO_TEAMSPACE/Episodes/fake'
+ARMADA_DATA_PATH = os.path.join(episode_root, '_ArmadaData')
+if not ARMADA_DATA_PATH in sys.path:
+	sys.path.append(ARMADA_DATA_PATH)
 
-from publish.pub_tab import PubTab
-
+import gui
 import mbqt
 import resource
+
+import aam_settings
+
+
 
 class MainAAM(QtWidgets.QWidget):
 	
@@ -36,10 +38,11 @@ class MainAAM(QtWidgets.QWidget):
 
 		self.resize(900, 800)  
 		self.setStyleSheet(resource.style_sheet('main_window_css'))
-
+		
 		self.create_gui()
 		self.create_layout()
 		self.create_connections()
+
 		self.show()
 
 	def create_gui(self):
@@ -48,7 +51,7 @@ class MainAAM(QtWidgets.QWidget):
 
 		# Address bar
 		self.le_address_bar = QtWidgets.QLineEdit()
-		self.le_address_bar.setText('S:/STUDIO_TEAMSPACE/Episodes/Mike_Bourbeau/Maya/Publish/RandomTest')
+		self.le_address_bar.setText('S:/STUDIO_TEAMSPACE/Episodes/fake/Asset_Builds/Character/CharacterA/Publish')
 		self.le_address_bar.setReadOnly(True)
 		self.le_address_bar.setObjectName('aamAddressBar')
 
@@ -76,7 +79,7 @@ class MainAAM(QtWidgets.QWidget):
 		self.main_tab_widget = QtWidgets.QTabWidget()
 		self.tabw_manager = QtWidgets.QWidget()
 		self.tabw_import = QtWidgets.QWidget()
-		self.tabw_publish =PubTab(self)
+		self.tabw_publish =	gui.PubTab(self)
 		self.main_tab_widget.addTab(self.tabw_manager, "Manager")
 		self.main_tab_widget.addTab(self.tabw_import, "Import")
 		self.main_tab_widget.addTab(self.tabw_publish, "Publish")
@@ -104,6 +107,8 @@ class MainAAM(QtWidgets.QWidget):
 		pass
 
 def main():
+
+	aam_settings.settings()
 
 	app = QtWidgets.QApplication(sys.argv)
 	ex = MainAAM()
