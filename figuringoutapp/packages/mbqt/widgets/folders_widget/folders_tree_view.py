@@ -45,9 +45,29 @@ class FoldersTreeView(QtWidgets.QTreeView):
 
 		self.setRootPath(utils.asset_builds_root(self))
 
+		self.selectionModel().selectionChanged.connect(self._selectionChanged)
+
 		self.create_gui()
 		self.create_layout()
 
+
+	def setModel(self, model):
+
+		super(FoldersTreeView, self).setModel(model)
+
+		self.selection_model = self.selectionModel()
+
+	def _selectionChanged(self, selected=None, deselected=None):
+		"""
+		Triggered when the folder item changes selection.
+
+		:type selected: list[Folder] or None
+		:type deselected: list[Folder] or None
+		:rtype: None
+		"""
+		print 'hey'
+		if not self._blockSignals:
+			self.itemSelectionChanged.emit()
 
 	def create_gui(self):
 		pass
@@ -83,6 +103,7 @@ class FoldersTreeView(QtWidgets.QTreeView):
 		:type path: str
 		:rtype: QtCore.QModelIndex
 		"""
+		print path
 		index = self.model().sourceModel().index(path)
 		return self.model().mapFromSource(index)
 
@@ -96,15 +117,13 @@ class FoldersTreeView(QtWidgets.QTreeView):
 
 
 
-
-
 class FileSystemModel(QtWidgets.QFileSystemModel):
 
 	def __init__(self, foldersWidget):
 		"""
 		:type foldersWidget: FileSystemWidget
 		"""
-		QtWidgets.QFileSystemModel.__init__(self, foldersWidget)
+		super(FileSystemModel, self).__init__(foldersWidget)
 
 		self._ignoreFilter = []
 		self._foldersWidget = foldersWidget
@@ -205,8 +224,12 @@ class SortFilterProxyModel(QtCore.QSortFilterProxyModel):
 		"""
 		:type folderWidget: FileSystemWidget
 		"""
+
+		super(SortFilterProxyModel, self).__init__(folderWidget)
+
 		self._folderWidget = folderWidget
-		QtCore.QSortFilterProxyModel.__init__(self, folderWidget)
+
+
 
 	def folderWidget(self):
 		"""

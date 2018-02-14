@@ -21,6 +21,23 @@ def readJson(path):
 
 	return data
 
+def saveJson(path, data):
+	"""
+	Write a python dict to a json file.
+
+	:type path: str
+	:type data: dict
+	:rtype: None
+	"""
+	dirname = os.path.dirname(path)
+
+	if not os.path.exists(dirname):
+		os.makedirs(dirname)
+
+	with open(path, "w") as f:
+		data = json.dumps(data, indent=4)
+		f.write(data)
+
 def localPath(*args):
 	"""
 	Return the users preferred disc location.
@@ -50,6 +67,9 @@ def asset_builds_root(*args):
 
 
 
+
+
+
 class FtrackData(object):
 	def __init__(self):
 		'''At startup, all ftrack data should be queried for the current task
@@ -59,6 +79,9 @@ class FtrackData(object):
 
 		Would be great to do this on a separate thead in the background
 		'''
+
+		global _ftrack_data
+
 
 	def data_root(self):
 		'''Root path for Armada's data

@@ -46,9 +46,6 @@ class FoldersItem(object):
 		"""
 		self._orderIndex = orderIndex
 
-	def showInFolder(self):
-		mbqt.showInFolder(self.path())
-
 	def orderIndex(self):
 		"""
 		:rtype:
@@ -164,11 +161,11 @@ class FoldersItem(object):
 
 		if not iconPath:
 			if "Trash" in self.name():
-				iconPath = resource.get("icons", "delete")
+				iconPath = resource.icon('aam_browse_folders')
 			elif expanded:
-				iconPath = resource.get("icons", "folder_open")
+				iconPath = resource.icon('aam_browse_folders')
 			else:
-				iconPath = resource.get("icons", "folder")
+				iconPath = resource.icon('aam_browse_folders')
 
 		return iconPath
 
