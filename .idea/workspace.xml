@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="98c32ac5-5fa0-4658-90cf-02dd6be5bbfd" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/temp-aam-pycharm.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resource/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resource/css/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/__init__.py" afterPath="$PROJECT_DIR$/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/cmds.py" afterPath="$PROJECT_DIR$/cmds.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/gui/__init__.py" afterPath="$PROJECT_DIR$/gui/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/gui/main_window.py" afterPath="$PROJECT_DIR$/gui/main_window.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/gui/publish/__init__.py" afterPath="$PROJECT_DIR$/gui/publish/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/gui/publish/pub_tab.py" afterPath="$PROJECT_DIR$/gui/publish/pub_tab.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/mb-atlantis-asset-manager.pyproj" afterPath="$PROJECT_DIR$/mb-atlantis-asset-manager.pyproj" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/aam_settings/__init__.py" afterPath="$PROJECT_DIR$/packages/aam_settings/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/__init__.py" afterPath="$PROJECT_DIR$/packages/mbqt/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/__init__.py" afterPath="$PROJECT_DIR$/packages/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/assets_widget/__init__.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/assets_widget/assets_item.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_item.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/assets_widget/assets_tree_widget.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_tree_widget.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/assets_widget/assets_widget.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_widget.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/assets_widget/prep_model.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/prep_model.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/assets_widget/prep_view.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/prep_view.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/folders_widget/__init__.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/folders_widget/folders_item.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_item.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/folders_widget/folders_tree_view.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_tree_view.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/folders_widget/folders_widget.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_widget.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/options_tab/__init__.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/options_tab/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/options_tab/options_tab.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/options_tab/options_tab.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/options_tab/options_tab_contents.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/options_tab/options_tab_contents.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/options_tab/options_tab_widget.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/options_tab/options_tab_widget.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/prep_popup/__init__.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/prep_popup/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/prep_popup/prep_popup.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/prep_popup/prep_popup.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/prep_popup/prep_popup_contents.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/prep_popup/prep_popup_contents.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/selection_tab/__init__.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/selection_tab/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/selection_tab/sel_tab_info.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/selection_tab/sel_tab_info.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/selection_tab/sel_tab_widget.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/selection_tab/sel_tab_widget.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource.py" afterPath="$PROJECT_DIR$/resource.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/css/__init__.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/css/main_window_css.py" afterPath="$PROJECT_DIR$/resource/css/main_window_css.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/css/popup_window_css.py" afterPath="$PROJECT_DIR$/resource/css/popup_window_css.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/css/push_button_w_icon_css.py" afterPath="$PROJECT_DIR$/resource/css/push_button_w_icon_css.py" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/icon/aam_banner_left.png" afterPath="$PROJECT_DIR$/resource/icon/aam_banner_left.png" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/icon/aam_browse_folders.png" afterPath="$PROJECT_DIR$/resource/icon/aam_browse_folders.png" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/icon/aam_refresh.png" afterPath="$PROJECT_DIR$/resource/icon/aam_refresh.png" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/icon/delete.png" afterPath="$PROJECT_DIR$/resource/icon/delete.png" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/icon/folder.png" afterPath="$PROJECT_DIR$/resource/icon/folder.png" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/icon/folder_open.png" afterPath="$PROJECT_DIR$/resource/icon/folder_open.png" />
+      <change beforePath="$PROJECT_DIR$/figuringoutapp/utils.py" afterPath="$PROJECT_DIR$/utils.py" />
+      <change beforePath="$PROJECT_DIR$/mb-atlantis-asset-manager.sln" afterPath="" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/temp_aam_pycharm$ex.coverage" NAME="ex Coverage Results" MODIFIED="1518801427471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ex.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="47" column="51" lean-forward="true" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="364">
+                <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cmds.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmds.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>indexFromPath</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="274" />
+    <option name="y" value="-21" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="temp-aam-pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="temp-aam-pycharm" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="temp-aam-pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="temp-aam-pycharm" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="temp-aam-pycharm" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/Program Files/Autodesk/Maya2018/devkit/other/pymel/extras/completion/py" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="S:\GitStuff\temp-aam-pycharm" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="MayaCharm Runner.MayaCharm">
+    <configuration name="MayaCharm" type="MAYACHARM_RUN_CONFIGURATION" factoryName="MayaCharm Configuration Factory">
+      <option name="ScriptFilePath" value="S:\GitStuff\temp-aam-pycharm\packages\mbqt\widgets\folders_widget\ex.py" />
+      <option name="ScriptCodeText" value="" />
+    </configuration>
+    <configuration name="ex" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="temp-aam-pycharm" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="MayaCharm Runner.MayaCharm" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ex" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.ex" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98c32ac5-5fa0-4658-90cf-02dd6be5bbfd" name="Default" comment="" />
+      <created>1518793639642</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1518793639642</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925683" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925683" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maya Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925683" sideWeight="0.49583334" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39981186" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="390">
+            <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2904">
+          <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="364">
+            <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="47" column="51" lean-forward="true" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
