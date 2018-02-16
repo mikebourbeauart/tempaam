@@ -2,61 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98c32ac5-5fa0-4658-90cf-02dd6be5bbfd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/temp-aam-pycharm.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resource/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resource/css/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/__init__.py" afterPath="$PROJECT_DIR$/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/cmds.py" afterPath="$PROJECT_DIR$/cmds.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/gui/__init__.py" afterPath="$PROJECT_DIR$/gui/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/gui/main_window.py" afterPath="$PROJECT_DIR$/gui/main_window.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/gui/publish/__init__.py" afterPath="$PROJECT_DIR$/gui/publish/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/gui/publish/pub_tab.py" afterPath="$PROJECT_DIR$/gui/publish/pub_tab.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/mb-atlantis-asset-manager.pyproj" afterPath="$PROJECT_DIR$/mb-atlantis-asset-manager.pyproj" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/aam_settings/__init__.py" afterPath="$PROJECT_DIR$/packages/aam_settings/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/__init__.py" afterPath="$PROJECT_DIR$/packages/mbqt/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/__init__.py" afterPath="$PROJECT_DIR$/packages/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/assets_widget/__init__.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/assets_widget/assets_item.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_item.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/assets_widget/assets_tree_widget.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_tree_widget.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/assets_widget/assets_widget.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_widget.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/assets_widget/prep_model.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/prep_model.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/assets_widget/prep_view.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/prep_view.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/folders_widget/__init__.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/folders_widget/folders_item.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_item.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/folders_widget/folders_tree_view.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_tree_view.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/folders_widget/folders_widget.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_widget.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/options_tab/__init__.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/options_tab/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/options_tab/options_tab.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/options_tab/options_tab.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/options_tab/options_tab_contents.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/options_tab/options_tab_contents.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/options_tab/options_tab_widget.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/options_tab/options_tab_widget.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/prep_popup/__init__.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/prep_popup/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/prep_popup/prep_popup.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/prep_popup/prep_popup.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/prep_popup/prep_popup_contents.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/prep_popup/prep_popup_contents.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/selection_tab/__init__.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/selection_tab/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/selection_tab/sel_tab_info.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/selection_tab/sel_tab_info.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/packages/mbqt/widgets/selection_tab/sel_tab_widget.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/selection_tab/sel_tab_widget.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource.py" afterPath="$PROJECT_DIR$/resource.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/css/__init__.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/css/main_window_css.py" afterPath="$PROJECT_DIR$/resource/css/main_window_css.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/css/popup_window_css.py" afterPath="$PROJECT_DIR$/resource/css/popup_window_css.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/css/push_button_w_icon_css.py" afterPath="$PROJECT_DIR$/resource/css/push_button_w_icon_css.py" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/icon/aam_banner_left.png" afterPath="$PROJECT_DIR$/resource/icon/aam_banner_left.png" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/icon/aam_browse_folders.png" afterPath="$PROJECT_DIR$/resource/icon/aam_browse_folders.png" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/icon/aam_refresh.png" afterPath="$PROJECT_DIR$/resource/icon/aam_refresh.png" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/icon/delete.png" afterPath="$PROJECT_DIR$/resource/icon/delete.png" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/icon/folder.png" afterPath="$PROJECT_DIR$/resource/icon/folder.png" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/resource/icon/folder_open.png" afterPath="$PROJECT_DIR$/resource/icon/folder_open.png" />
-      <change beforePath="$PROJECT_DIR$/figuringoutapp/utils.py" afterPath="$PROJECT_DIR$/utils.py" />
-      <change beforePath="$PROJECT_DIR$/mb-atlantis-asset-manager.sln" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,10 +30,10 @@
       <file leaf-file-name="ex.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="47" column="51" lean-forward="true" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,8 +101,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="274" />
-    <option name="y" value="-21" />
+    <option name="x" value="292" />
+    <option name="y" value="-19" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -328,7 +275,7 @@
         <state relative-caret-position="52">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -365,7 +312,7 @@
         <state relative-caret-position="2904">
           <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -399,10 +346,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="47" column="51" lean-forward="true" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
