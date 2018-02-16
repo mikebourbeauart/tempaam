@@ -3,6 +3,11 @@ import sys
 from Qt import QtWidgets
 from Qt import QtCore
 
+import maya.cmds as mc
+
+mc.polyCube()
+
+
 
 class FoldersWidget(QtWidgets.QWidget):
 
