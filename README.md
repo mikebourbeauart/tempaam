@@ -5,14 +5,14 @@ For development:
 
 Qt.py stubs for auto-completion
 -------------------------------
-
+https://github.com/mottosso/Qt.py/issues/199
 1. Clone Qt.py fork and activate stub branch
 2. In PyCharm add the path/to/stubs directory to the content root directory
 in the project settings
 
 Maya auto-completion
 --------------------
-
+https://stackoverflow.com/questions/39072433/how-to-reference-maya-commands-in-pycharm
 1. Setup the Maya Python interpreter in Pycharm
     - In PyCharm, Ctrl+Alt+S to open your preferences and find Project Interpreter.
     - Next to the drop-down list, click the little gear icon, and choose Add Local.
