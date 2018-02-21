@@ -3,11 +3,6 @@ import sys
 from Qt import QtWidgets
 from Qt import QtCore
 
-import maya.cmds as mc
-
-mc.polyCube()
-
-
 
 class FoldersWidget(QtWidgets.QWidget):
 
@@ -240,9 +235,9 @@ def main():
 
 
 if __name__ == '__main__':
-	# main()
-	#     '''For developing using MayaCharm from an IDE'''
-
+	main()
+	"""
+	'''For executing with a MayaCharm runner'''
 	ui = None
 
 	try:
@@ -252,3 +247,4 @@ if __name__ == '__main__':
 
 	ui = FoldersWidget()
 	ui.show()
+	"""
