@@ -1,10 +1,5 @@
 import sys
 
-################################################################
-
-import os
-import sys
-
 from Qt import QtWidgets
 from Qt import QtCore
 
@@ -12,6 +7,7 @@ import maya.cmds as mc
 
 WINDOW_TITLE = 'Folders Widget'
 WINDOW_OBJECT = 'mainWindow'
+
 
 def _maya_delete_ui():
 	"""Delete existing UI in Maya"""
@@ -29,10 +25,16 @@ def _maya_main_window():
 			return obj
 	raise RuntimeError('Could not find MayaWindow instance')
 
-class FoldersWidget(QtWidgets.QWidget):
+
+class FoldersWidget(QtWidgets.QDialog):
 
 	def __init__(self, parent=None):
 		super(FoldersWidget, self).__init__(parent)
+
+		self.setObjectName(WINDOW_OBJECT)
+		self.setMinimumSize(400, 300)
+		self.setWindowTitle(WINDOW_TITLE)
+		self.setAttribute(QtCore.Qt.WA_DeleteOnClose)
 
 		self.btn_folders_options = None
 		self.trw_folders = None
@@ -250,13 +252,6 @@ void QFileSystemModelDialog::on_treeView_clicked(const QModelIndex &index;)
 }
 """
 
-
-def main():
-	"""For developing JUST from an IDE"""
-	app = QtWidgets.QApplication(sys.argv)
-	ex = FoldersWidget()
-	ex.show()
-	sys.exit(app.exec_())
 
 ########################################################################################################################
 def main():
