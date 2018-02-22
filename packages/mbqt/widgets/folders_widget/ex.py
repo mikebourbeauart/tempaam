@@ -1,18 +1,38 @@
 import sys
 
+################################################################
+
+import os
+import sys
+
 from Qt import QtWidgets
 from Qt import QtCore
 
 import maya.cmds as mc
 
-mc.polyCube()
+WINDOW_TITLE = 'Folders Widget'
+WINDOW_OBJECT = 'mainWindow'
+
+def _maya_delete_ui():
+	"""Delete existing UI in Maya"""
+	if mc.window(WINDOW_OBJECT, q=True, exists=True):
+		mc.deleteUI(WINDOW_OBJECT)  # Delete window
+	if mc.dockControl('MayaWindow|' + WINDOW_TITLE, q=True, ex=True):
+		mc.deleteUI('MayaWindow|' + WINDOW_TITLE)  # Delete docked window
 
 
+def _maya_main_window():
+	"""Return Maya's main window"""
+	app = QtWidgets.QApplication.instance()
+	for obj in app.topLevelWidgets():
+		if obj.objectName() == 'MayaWindow':
+			return obj
+	raise RuntimeError('Could not find MayaWindow instance')
 
 class FoldersWidget(QtWidgets.QWidget):
 
-	def __init__(self):
-		super(FoldersWidget, self).__init__()
+	def __init__(self, parent=None):
+		super(FoldersWidget, self).__init__(parent)
 
 		self.btn_folders_options = None
 		self.trw_folders = None
@@ -52,7 +72,7 @@ class FoldersTreeView(QtWidgets.QTreeView):
 
 		self.selection_model = None
 
-		self.mPath = "S:/Projects/Firstborn/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds"
+		self.mPath = "S:/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds"  # "S:/Projects/Firstborn/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds"
 
 		self._sourceModel = FolderSystemModel(self)
 
@@ -80,8 +100,8 @@ class FoldersTreeView(QtWidgets.QTreeView):
 		index = self.selected_index()  # self.model().sourceModel().index(path)
 		index_path = self.path_from_index(index[0])
 
-		# mPath = self.selectionModel().sourceModel().fileInfo(fileIndex)#.absoluteFilePath()
-		# self._sourceModel.setRootIndex(self._sourceModel.setRootPath(index_path))
+	# mPath = self.selectionModel().sourceModel().fileInfo(fileIndex)#.absoluteFilePath()
+	# self._sourceModel.setRootIndex(self._sourceModel.setRootPath(index_path))
 
 	def selected_index(self):
 		"""
@@ -144,7 +164,7 @@ class FilesTreeView(QtWidgets.QTreeView):
 	def __init__(self, parent=None):
 		super(FilesTreeView, self).__init__(parent)
 
-		self.mPath = "S:/Projects/Firstborn/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds"
+		self.mPath = "S:/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds"  # "S:/Projects/Firstborn/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds"
 
 		self._sourceModel = FilesSystemModel(self)
 
@@ -238,17 +258,22 @@ def main():
 	ex.show()
 	sys.exit(app.exec_())
 
+########################################################################################################################
+def main():
+	"""Run in Maya"""
+	_maya_delete_ui()  # Delete any existing existing UI
+	global boil
+	window = FoldersWidget(parent=_maya_main_window())
+	window.show()  # Show the UI
+
+	"""
+	elif DOCK_WITH_MAYA_UI:
+		allowedAreas = ['right', 'left']
+		cmds.dockControl(WINDOW_TITLE, label=WINDOW_TITLE, area='left',
+						 content=WINDOW_OBJECT, allowedArea=allowedAreas)
+	"""
+
 
 if __name__ == '__main__':
-	# main()
-	#     '''For developing using MayaCharm from an IDE'''
+	main()
 
-	ui = None
-
-	try:
-		ui.close()
-	except:
-		pass
-
-	ui = FoldersWidget()
-	ui.show()
