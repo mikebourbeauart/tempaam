@@ -28,8 +28,6 @@ WINDOW_OBJECT = 'mainWindow'
 
 class FoldersWidget(QtWidgets.QDialog):
 
-
-
 	def __init__(self, parent=None):
 		super(FoldersWidget, self).__init__(parent)
 
@@ -66,8 +64,6 @@ class FoldersTreeView(QtWidgets.QTreeView):
 	def __init__(self, parent=None):
 		super(FoldersTreeView, self).__init__(parent)
 
-		self.selection_model = None
-
 		self.mPath = 'S:/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds'  # "S:/Projects/Firstborn/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds"
 
 		self._sourceModel = FolderSystemModel(self)
@@ -77,11 +73,10 @@ class FoldersTreeView(QtWidgets.QTreeView):
 		proxy_model.sort(0)
 
 		self.setModel(proxy_model)
+
 		self.set_root_path(self.mPath)
 
-		self.create_connections()
-
-	def create_connections(self):
+		# Connections ---------------------
 		self.selectionModel().selectionChanged.connect(self.selection_changed)
 
 	def setModel(self, model):

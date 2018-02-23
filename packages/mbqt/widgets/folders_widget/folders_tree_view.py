@@ -4,15 +4,12 @@ from Qt import QtWidgets
 from Qt import QtCore
 from Qt import QtGui
 
-
 import folders_item
-
 import utils
+
 
 class FoldersTreeView(QtWidgets.QTreeView):
 
-	itemDropped = QtCore.Signal(object)
-	itemRenamed = QtCore.Signal(str, str)
 	itemSelectionChanged = QtCore.Signal()
 
 	def __init__(self, parent=None):

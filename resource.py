@@ -1,11 +1,12 @@
 
 import os
+import sys
 
 from Qt import QtGui
 
 PATH = os.path.abspath(__file__)
 DIRNAME = os.path.dirname(PATH)
-RESOURCE_DIRNAME = os.path.join(DIRNAME, "resource")
+RESOURCE_DIRNAME = os.path.join(DIRNAME, 'resources')
 
 
 def get(*args):
@@ -42,7 +43,9 @@ def style_sheet(*args):
 
 
 class Resource(object):
+
 	DEFAULT_DIRNAME = RESOURCE_DIRNAME
+
 	def __init__(self, *args):
 
 		dirname = ""
@@ -102,11 +105,12 @@ class Resource(object):
 	def style_sheet(self, css_module):
 		"""
 		Return a style sheet css object from the given resource name.
-		:rtype: str 
+		:rtype: str
+		:return: module object
 		"""
-		imported = getattr(__import__('css', fromlist=[css_module]), css_module)
-
+		print css_module
+		imported = getattr(__import__('resources.css', fromlist=[css_module]), css_module)
+		print imported
 		return imported.css
 
 
-		

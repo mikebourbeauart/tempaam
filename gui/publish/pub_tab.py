@@ -30,26 +30,16 @@ class PubTab(QtWidgets.QWidget):
 		self.parent = parent
 		self.setObjectName('PublishTab')
 
-		# Commands
-		self.create_gui()
-		self.create_layout()
-		self.create_connections()
-
-
-	#------------------------------------------------------
-	def create_gui( self ):
-
-		self.trw_folders = mbqt.FoldersWidget()
-		self.trw_publish = mbqt.AssetsWidget()
+		# GUI -----------------------------
+		self.folders_widget = mbqt.FoldersWidget()
+		self.assets_widget = mbqt.AssetsWidget()
 		self.tw_selection_info = mbqt.SelTabWidget()
 		self.tw_options = mbqt.OptionsTabWidget()
 
-	#------------------------------------------------------
-	def create_layout(self):		
-
+		# Layout -------------------------
 		self.asset_splt = QtWidgets.QSplitter(QtCore.Qt.Horizontal)
-		self.asset_splt.addWidget(self.trw_folders)
-		self.asset_splt.addWidget(self.trw_publish)
+		self.asset_splt.addWidget(self.folders_widget)
+		self.asset_splt.addWidget(self.assets_widget)
 		self.asset_splt.addWidget(self.tw_selection_info)
 		self.asset_splt.setChildrenCollapsible(False)
 		self.asset_splt.setStretchFactor(1,1)
@@ -67,10 +57,7 @@ class PubTab(QtWidgets.QWidget):
 
 		self.setLayout(self.main_layout)
 
-	#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
-	#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
-	def create_connections(self):
-		
-		pass
+		# Connections ---------------------
+		self.folders_widget.itemSelectionChanged.connect(self.assets_widget.set_root_path)
 	
 	

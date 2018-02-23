@@ -8,11 +8,10 @@ import resource
 class FoldersWidget(QtWidgets.QWidget):
 	"""Folder selection widget
 	"""
-	def __init__(self):
-		super(FoldersWidget, self).__init__()
+	def __init__(self, parent=None):
+		super(FoldersWidget, self).__init__(parent)
 
-		self.create_gui()
-		self.create_layout()
+		self.setObjectName('foldersWidget')
 
 		# GUI -----------------------------
 		# Browse folders button
@@ -23,7 +22,7 @@ class FoldersWidget(QtWidgets.QWidget):
 		self.btn_folders_options.setStyleSheet(resource.style_sheet('push_button_w_icon_css'))
 		self.btn_folders_options.setObjectName('aamBrowseFolders')
 
-		self.trw_folders = FoldersTreeView()
+		self.tv_folders = FoldersTreeView()
 
 		# Layout --------------------------
 		self.main_layout = QtWidgets.QVBoxLayout(self)		
@@ -32,4 +31,3 @@ class FoldersWidget(QtWidgets.QWidget):
 
 		self.setLayout(self.main_layout)
 
-		# Connections ---------------------
