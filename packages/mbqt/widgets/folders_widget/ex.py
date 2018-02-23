@@ -3,30 +3,32 @@ import sys
 from Qt import QtWidgets
 from Qt import QtCore
 
-import maya.cmds as mc
+# import maya.cmds as mc
 
 WINDOW_TITLE = 'Folders Widget'
 WINDOW_OBJECT = 'mainWindow'
 
 
-def _maya_delete_ui():
-	"""Delete existing UI in Maya"""
-	if mc.window(WINDOW_OBJECT, q=True, exists=True):
-		mc.deleteUI(WINDOW_OBJECT)  # Delete window
-	if mc.dockControl('MayaWindow|' + WINDOW_TITLE, q=True, ex=True):
-		mc.deleteUI('MayaWindow|' + WINDOW_TITLE)  # Delete docked window
-
-
-def _maya_main_window():
-	"""Return Maya's main window"""
-	app = QtWidgets.QApplication.instance()
-	for obj in app.topLevelWidgets():
-		if obj.objectName() == 'MayaWindow':
-			return obj
-	raise RuntimeError('Could not find MayaWindow instance')
+# def _maya_delete_ui():
+# 	"""Delete existing UI in Maya"""
+# 	if mc.window(WINDOW_OBJECT, q=True, exists=True):
+# 		mc.deleteUI(WINDOW_OBJECT)  # Delete window
+# 	if mc.dockControl('MayaWindow|' + WINDOW_TITLE, q=True, ex=True):
+# 		mc.deleteUI('MayaWindow|' + WINDOW_TITLE)  # Delete docked window
+#
+#
+# def _maya_main_window():
+# 	"""Return Maya's main window"""
+# 	app = QtWidgets.QApplication.instance()
+# 	for obj in app.topLevelWidgets():
+# 		if obj.objectName() == 'MayaWindow':
+# 			return obj
+# 	raise RuntimeError('Could not find MayaWindow instance')
 
 
 class FoldersWidget(QtWidgets.QDialog):
+
+	itemSelectionChanged = QtCore.Signal()
 
 	def __init__(self, parent=None):
 		super(FoldersWidget, self).__init__(parent)
@@ -37,13 +39,12 @@ class FoldersWidget(QtWidgets.QDialog):
 		self.setAttribute(QtCore.Qt.WA_DeleteOnClose)
 
 		self.btn_folders_options = None
-		self.trw_folders = None
+		self.tv_folders = None
 		self.trw_files = None
 		self.main_layout = None
 
 		self.create_gui()
 		self.create_layout()
-		self.create_connections()
 
 	def create_gui(self):
 		# Browse folders button
@@ -52,19 +53,16 @@ class FoldersWidget(QtWidgets.QDialog):
 		self.btn_folders_options.setMaximumHeight(50)
 		self.btn_folders_options.setObjectName('aamBrowseFolders')
 
-		self.trw_folders = FoldersTreeView()
+		self.tv_folders = FoldersTreeView()
 		self.trw_files = FilesTreeView()
 
 	def create_layout(self):
 		self.main_layout = QtWidgets.QHBoxLayout(self)
 		self.main_layout.addWidget(self.btn_folders_options)
-		self.main_layout.addWidget(self.trw_folders)
+		self.main_layout.addWidget(self.tv_folders)
 		self.main_layout.addWidget(self.trw_files)
 
 		self.setLayout(self.main_layout)
-
-	def create_connections(self):
-		self.trw_folders.selectionModel().selectionChanged.connect(self.trw_folders.selection_changed)
 
 
 class FoldersTreeView(QtWidgets.QTreeView):
@@ -74,7 +72,7 @@ class FoldersTreeView(QtWidgets.QTreeView):
 
 		self.selection_model = None
 
-		self.mPath = "S:/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds"  # "S:/Projects/Firstborn/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds"
+		self.mPath = 'S:/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds'  # "S:/Projects/Firstborn/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds"
 
 		self._sourceModel = FolderSystemModel(self)
 
@@ -85,11 +83,16 @@ class FoldersTreeView(QtWidgets.QTreeView):
 		self.setModel(proxy_model)
 		self.set_root_path(self.mPath)
 
+		self.create_connections()
+
+	def create_connections(self):
+		self.selectionModel().selectionChanged.connect(self.selection_changed)
+
 	def setModel(self, model):
 		super(FoldersTreeView, self).setModel(model)
 		self.selection_model = self.selectionModel()
 
-	def selection_changed(self, selected=None, deselected=None):
+	def selection_changed(self, index=None):
 		"""
 		Triggered when the folder item changes selection.
 
@@ -97,27 +100,18 @@ class FoldersTreeView(QtWidgets.QTreeView):
 		:type deselected: list[Folder] or None
 		:rtype: None
 		"""
-		print selected
-		print deselected
-		index = self.selected_index()  # self.model().sourceModel().index(path)
-		index_path = self.path_from_index(index[0])
 
-	# mPath = self.selectionModel().sourceModel().fileInfo(fileIndex)#.absoluteFilePath()
-	# self._sourceModel.setRootIndex(self._sourceModel.setRootPath(index_path))
+		# Get current selection
+		index = self.currentIndex()
 
-	def selected_index(self):
-		"""
-		:rtype: list[Folder]
-		"""
-
-		for index in self.selectionModel().selectedIndexes():
-			return index
+		print self.path_from_index(index)
 
 	def path_from_index(self, index):
 		"""
 		:type index: QtCore.QModelIndex
 		:rtype: str
 		"""
+		# Get index from source model
 		index = self.model().mapToSource(index)
 		return self.model().sourceModel().filePath(index)
 
@@ -126,15 +120,19 @@ class FoldersTreeView(QtWidgets.QTreeView):
 		:type path: str
 		:rtype: QtCore.QModelIndex
 		"""
+		# Get index
 		index = self.model().sourceModel().index(path)
+		# Map index from source to sort filter
 		return self.model().mapFromSource(index)
 
 	def set_root_path(self, path):
 		"""Set the model's root :path:
 		:type path: str
 		"""
+		# Set root path
 		self.model().sourceModel().setRootPath(path)
-		index = self.index_from_path(path)
+		index = self.index_from_path(path) # hide until i figure this out
+		# Set root index
 		self.setRootIndex(index)
 
 
@@ -166,7 +164,7 @@ class FilesTreeView(QtWidgets.QTreeView):
 	def __init__(self, parent=None):
 		super(FilesTreeView, self).__init__(parent)
 
-		self.mPath = "S:/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds"  # "S:/Projects/Firstborn/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds"
+		self.mPath = 'S:/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds'  # "S:/Projects/Firstborn/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData/PublishData/Asset_Builds"
 
 		self._sourceModel = FilesSystemModel(self)
 
@@ -254,20 +252,26 @@ void QFileSystemModelDialog::on_treeView_clicked(const QModelIndex &index;)
 
 
 ########################################################################################################################
+# def main():
+# 	"""Run in Maya"""
+# 	_maya_delete_ui()  # Delete any existing existing UI
+# 	global window
+# 	window = FoldersWidget(parent=_maya_main_window())
+# 	window.show()  # Show the UI
+#
+# 	"""
+# 	elif DOCK_WITH_MAYA_UI:
+# 		allowedAreas = ['right', 'left']
+# 		cmds.dockControl(WINDOW_TITLE, label=WINDOW_TITLE, area='left',
+# 						 content=WINDOW_OBJECT, allowedArea=allowedAreas)
+# 	"""
+
 def main():
-	"""Run in Maya"""
-	_maya_delete_ui()  # Delete any existing existing UI
-	global boil
-	window = FoldersWidget(parent=_maya_main_window())
-	window.show()  # Show the UI
 
-	"""
-	elif DOCK_WITH_MAYA_UI:
-		allowedAreas = ['right', 'left']
-		cmds.dockControl(WINDOW_TITLE, label=WINDOW_TITLE, area='left',
-						 content=WINDOW_OBJECT, allowedArea=allowedAreas)
-	"""
-
+	app = QtWidgets.QApplication(sys.argv)
+	window = FoldersWidget()
+	window.show()
+	sys.exit(app.exec_())
 
 if __name__ == '__main__':
 	main()
