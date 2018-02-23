@@ -27,7 +27,7 @@ class FoldersWidget(QtWidgets.QWidget):
 		# Layout --------------------------
 		self.main_layout = QtWidgets.QVBoxLayout(self)		
 		self.main_layout.addWidget(self.btn_folders_options)
-		self.main_layout.addWidget(self.trw_folders)
+		self.main_layout.addWidget(self.tv_folders)
 
 		self.setLayout(self.main_layout)
 

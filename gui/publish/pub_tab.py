@@ -58,6 +58,6 @@ class PubTab(QtWidgets.QWidget):
 		self.setLayout(self.main_layout)
 
 		# Connections ---------------------
-		self.folders_widget.itemSelectionChanged.connect(self.assets_widget.set_root_path)
+		self.folders_widget.tv_folders.itemSelectionChanged.connect(self.assets_widget.tv_assets.set_root_path)
 	
 	

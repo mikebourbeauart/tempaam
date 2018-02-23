@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98c32ac5-5fa0-4658-90cf-02dd6be5bbfd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/css/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/publish/pub_tab.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/publish/pub_tab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_tree_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_tree_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_widget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_tree_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_tree_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_widget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/css/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/css/main_window_css.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/main_window_css.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/css/popup_window_css.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/popup_window_css.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/css/push_button_w_icon_css.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/push_button_w_icon_css.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/icon/aam_banner_left.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/icon/aam_banner_left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/icon/aam_browse_folders.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/icon/aam_browse_folders.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/icon/aam_refresh.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/icon/aam_refresh.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/icon/delete.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/icon/delete.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/icon/folder.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/icon/folder.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/icon/folder_open.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/icon/folder_open.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,20 +21,32 @@
     <SUITE FILE_PATH="coverage/temp_aam$ex.coverage" NAME="ex Coverage Results" MODIFIED="1519406988315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget" />
     <SUITE FILE_PATH="coverage/temp_aam$qsortfilter.coverage" NAME="qsortfilter Coverage Results" MODIFIED="1519343236411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget" />
     <SUITE FILE_PATH="coverage/temp_aam$main_window.coverage" NAME="main_window Coverage Results" MODIFIED="1519404003742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
-    <SUITE FILE_PATH="coverage/temp_aam$main.coverage" NAME="main Coverage Results" MODIFIED="1519406920101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/temp_aam$main.coverage" NAME="main Coverage Results" MODIFIED="1519408052886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DockManager">
     <window id="1">
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="ex.py" pinned="false" current-in-tab="true">
+            <file leaf-file-name="ex.py" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="676">
-                    <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+                  <state relative-caret-position="337">
+                    <caret line="47" column="42" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="42" />
                     <folding>
                       <element signature="e#0#10#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="folders_tree_view.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_tree_view.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="707">
+                    <caret line="151" lean-forward="true" selection-start-line="115" selection-end-line="151" />
+                    <folding>
+                      <element signature="e#0#9#0" expanded="true" />
                     </folding>
                   </state>
                 </provider>
@@ -84,14 +83,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="folders_tree_view.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_tree_view.py">
+      <file leaf-file-name="assets_widget.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_widget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="23" column="43" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="182">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assets_tree_widget.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_tree_widget.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
             </state>
           </provider>
         </entry>
@@ -104,8 +109,8 @@
       <file leaf-file-name="folders_widget.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_widget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="477">
+              <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -116,8 +121,8 @@
       <file leaf-file-name="pub_tab.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui/publish/pub_tab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+            <state relative-caret-position="322">
+              <caret line="60" column="97" selection-start-line="60" selection-start-column="97" selection-end-line="60" selection-end-column="97" />
               <folding>
                 <element signature="e#126#135#0" expanded="true" />
               </folding>
@@ -165,6 +170,7 @@
       <find>css_mod</find>
       <find>trw_folders</find>
       <find>trw_publish</find>
+      <find>index_from_path</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,10 +197,12 @@
         <option value="$PROJECT_DIR$/resources/css/__init__.py" />
         <option value="$PROJECT_DIR$/resources/__init__.py" />
         <option value="$PROJECT_DIR$/resource.py" />
-        <option value="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_widget.py" />
-        <option value="$PROJECT_DIR$/gui/publish/pub_tab.py" />
-        <option value="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_tree_view.py" />
         <option value="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py" />
+        <option value="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_widget.py" />
+        <option value="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_tree_view.py" />
+        <option value="$PROJECT_DIR$/gui/publish/pub_tab.py" />
+        <option value="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_widget.py" />
+        <option value="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_tree_widget.py" />
       </list>
     </option>
   </component>
@@ -271,6 +279,15 @@
               <item name="packages" type="462c0819:PsiDirectoryNode" />
               <item name="mbqt" type="462c0819:PsiDirectoryNode" />
               <item name="widgets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="temp-aam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="temp-aam-pycharm" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="temp-aam" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="mbqt" type="462c0819:PsiDirectoryNode" />
+              <item name="widgets" type="462c0819:PsiDirectoryNode" />
+              <item name="assets_widget" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="temp-aam" type="b2602c69:ProjectViewProjectNode" />
@@ -415,8 +432,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ex" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.ex" />
         <item itemvalue="Python.main_window" />
         <item itemvalue="Python.qsortfilter" />
       </list>
@@ -738,16 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/main_window.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="18" selection-start-line="15" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -769,41 +776,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gui/publish/pub_tab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+        <state relative-caret-position="322">
+          <caret line="60" column="97" selection-start-line="60" selection-start-column="97" selection-end-line="60" selection-end-column="97" />
           <folding>
             <element signature="e#126#135#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="47" column="42" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_widget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="477">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_tree_view.py">
+    <entry file="file://$PROJECT_DIR$/gui/main_window.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="43" />
+        <state relative-caret-position="312">
+          <caret line="18" selection-start-line="15" selection-end-line="18" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py">
+    <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_widget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+        <state relative-caret-position="182">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_tree_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="151" lean-forward="true" selection-start-line="115" selection-end-line="151" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_tree_widget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>

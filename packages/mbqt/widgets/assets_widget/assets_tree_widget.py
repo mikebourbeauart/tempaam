@@ -7,10 +7,21 @@ class AssetsTreeWidget(QtWidgets.QTreeWidget):
 	def __init__(self):
 		super(AssetsTreeWidget, self).__init__()
 
-		self._dpi = 1
+		# Variables
+		self._filter = []
+		self._folders = {}
+		self._isLocked = False
+		self._blockSignals = False
+		self._enableFolderSettings = False
 
-		self.setDpi(1)
+		# Model stuff
+		self._sourceModel = FileSystemModel(self)
+		proxy_model = SortFilterProxyModel(self)
+		proxy_model.setSourceModel(self._sourceModel)
+		proxy_model.sort(0)
+		self.setModel(proxy_model)
 
+		# Settings
 		self.setAcceptDrops(True)
 		self.setHeaderHidden(True)
 		self.setMouseTracking(True)
@@ -21,14 +32,16 @@ class AssetsTreeWidget(QtWidgets.QTreeWidget):
 		self.setMinimumHeight(500)
 		self.setMinimumWidth(400)
 
+		# Commands
+		self.setDpi(1)
 
-	def dpi(self):
-		"""
-		Return the dots per inch multiplier.
+		# Connections ---------------------
+		self.selectionModel().selectionChanged.connect(self._selection_changed)
 
-		:rtype: float
-		"""
-		return self._dpi
+	def setModel(self, model):
+		"""Override setModel method"""
+		super(AssetsTreeWidget, self).setModel(model)
+		self.selection_model = self.selectionModel()
 
 	def setDpi(self, dpi):
 		"""
@@ -43,22 +56,86 @@ class AssetsTreeWidget(QtWidgets.QTreeWidget):
 		self.setIconSize(QtCore.QSize(size, size))
 		self.setStyleSheet("height: {size}".format(size=size))
 
-	def update(self, *args):
+	def _selection_changed(self):
 		"""
+		Triggered when the folder item changes selection.
+
+		:type selected: list[Folder] or None
+		:type deselected: list[Folder] or None
 		:rtype: None
 		"""
-		for item in self.items():
-			item.update()
+		path = self.current_folder_selection()
+		print 'init signal'
+		self.itemSelectionChanged.emit(path)
 
-	def items(self):
+	def current_folder_selection(self):
+		# Get current selection
+		index = self.currentIndex()
+		return self.path_from_index(index)
+
+	def path_from_index(self, index):
 		"""
-		Return a list of all the items in the tree widget.
-
-		:rtype: list[NavigationWidgetItem]
+		:type index: QtCore.QModelIndex
+		:rtype: str
 		"""
-		items = self.findItems(
-			"*",
-			QtCore.Qt.MatchWildcard | QtCore.Qt.MatchRecursive
-		)
+		# Get index from source model
+		index = self.model().mapToSource(index)
+		return self.model().sourceModel().filePath(index)
 
-		return items
+	def index_from_path(self, path):
+		"""
+		:type path: str
+		:rtype: QtCore.QModelIndex
+		"""
+		# Get index
+		index = self.model().sourceModel().index(path)
+		# Map index from source to sort filter
+		return self.model().mapFromSource(index)
+
+	def set_root_path(self, path):
+		"""Set the model's root :path:
+		:type path: str
+		"""
+		# Set root path
+		self.model().sourceModel().setRootPath(path)
+		index = self.index_from_path(path) # hide until i figure this out
+		# Set root index
+		self.setRootIndex(index)
+
+
+class FileSystemModel(QtWidgets.QFileSystemModel):
+
+	def __init__(self, foldersWidget):
+		"""
+		:type foldersWidget: FileSystemWidget
+		"""
+		super(FileSystemModel, self).__init__(foldersWidget)
+
+		self._ignoreFilter = []
+		self._foldersWidget = foldersWidget
+		self.setFilter(QtCore.QDir.AllDirs | QtCore.QDir.NoDotAndDotDot)
+
+
+class SortFilterProxyModel(QtCore.QSortFilterProxyModel):
+
+	def __init__(self, folderWidget):
+		"""
+		:type folderWidget: FileSystemWidget
+		"""
+
+		super(SortFilterProxyModel, self).__init__(folderWidget)
+
+		self._folderWidget = folderWidget
+
+
+
+
+
+
+
+
+
+
+
+
+

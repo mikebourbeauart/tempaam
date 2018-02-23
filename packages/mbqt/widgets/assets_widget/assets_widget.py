@@ -10,10 +10,8 @@ class AssetsWidget(QtWidgets.QWidget):
 
 	def __init__(self):
 		super(AssetsWidget, self).__init__()
-		self.create_gui()
-		self.create_layout()
 
-	def create_gui(self):
+		# GUI -----------------------------
 		# Browse folders button
 		self.btn_folders_options = QtWidgets.QPushButton(self)
 		self.icon = resource.icon('aam_browse_folders')
@@ -23,11 +21,11 @@ class AssetsWidget(QtWidgets.QWidget):
 		self.btn_folders_options.setStyleSheet(resource.style_sheet('push_button_w_icon_css'))
 		self.btn_folders_options.setObjectName('aamBrowseFolders')
 
-		self.trw_assets = AssetsTreeWidget()
+		self.tv_assets = AssetsTreeWidget()
 
-	def create_layout(self):
+		# Layout -------------------------
 		self.main_layout = QtWidgets.QVBoxLayout(self)		
 		self.main_layout.addWidget(self.btn_folders_options)
-		self.main_layout.addWidget(self.trw_assets)
+		self.main_layout.addWidget(self.tv_assets)
 
 		self.setLayout(self.main_layout)
