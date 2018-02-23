@@ -1,8 +1,7 @@
-import os
 
 from Qt import QtWidgets
 from Qt import QtCore
-from Qt import QtGui
+
 
 import folders_item
 import utils
@@ -33,6 +32,9 @@ class FoldersTreeView(QtWidgets.QTreeView):
 		self.setAcceptDrops(True)
 		self.setHeaderHidden(True)
 		self.setMouseTracking(True)
+		self.hideColumn(1)
+		self.hideColumn(2)
+		self.hideColumn(3)
 		self.setFrameShape(QtWidgets.QFrame.NoFrame)
 		self.setSelectionMode(QtWidgets.QTreeWidget.ExtendedSelection)
 		self.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)

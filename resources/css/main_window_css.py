@@ -37,6 +37,7 @@ css = '''
 		color: #FFFFFF;
 		font-weight:bold;
 	}
+	
 
 	QTreeView::indicator:unchecked{
 		image: url("S:/_management/_mb_Pipeline/mb_Pipeline/mb_Pipeline/assets/icons/mb_MBP_unchecked.png");
@@ -46,26 +47,41 @@ css = '''
 	}
 	QTreeView{
 		alternate-background-color: #292929;
+		show-decoration-selected: 1;
 		background: #242424;
 		color:rgb(218,218,218) ;
 		font:12px;
 		border: none;
 		height: 200px;
+		outline: 0;
 	}
-	QTreeView::item::hover{
-		background: #29C2B2;
+	QTreeView::item:hover, QTreeView::branch:hover{
+		background-color: #2a615f;
 		color: #EDEDED;
 		font-weight:bold;
 	}
-	QTreeView::item:selected{
+	QTreeView::item:selected, QTreeView::item:selected:active, QTreeView::branch:selected{
 		background-color: #2c998e;
 		color:rgb(232,232,232)
 	}
-	QTreeView QHeaderView:section{
+	QTreeView::QHeaderView:section{
 		background: #636363;
 		font-weight:bold;
 		height: 20px;
 	}
+	QTreeView::branch:closed:has-children:!has-siblings:closed,
+	QTreeView::branch:closed:has-children:has-siblings {
+		border-image: url(D:/Git_Stuff/temp-aam/resources/icon/branch_closed_white.png);
+	}
+	
+	QTreeView::branch:open:has-children:!has-siblings,
+	QTreeView::branch:open:has-children:has-siblings  {
+		border-image: url(D:/Git_Stuff/temp-aam/resources/icon/branch_open_white.png);
+	}
+	
+
+	
+
 	
 	QScrollBar::handle{
 		background-color: rgb(156, 156, 156);

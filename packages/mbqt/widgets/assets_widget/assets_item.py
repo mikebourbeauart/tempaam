@@ -1,4 +1,4 @@
-
+from Qt import QtWidgets
 
 
 

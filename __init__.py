@@ -10,7 +10,7 @@ _resource = None
 PATH = os.path.abspath(__file__)
 DIRNAME = os.path.dirname(PATH)
 PACKAGES_PATH = os.path.join(DIRNAME, "packages")
-RESOURCE_PATH = os.path.join(DIRNAME, "resource")
+RESOURCES_PATH = os.path.join(DIRNAME, "resourceS")
 HELP_URL = "http://www.studiolibrary.com"
 
 

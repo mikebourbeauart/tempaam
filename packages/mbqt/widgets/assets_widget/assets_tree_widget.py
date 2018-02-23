@@ -2,7 +2,11 @@
 from Qt import QtWidgets
 from Qt import QtCore
 
-class AssetsTreeWidget(QtWidgets.QTreeWidget):
+import assets_item
+import utils
+
+
+class AssetsTreeWidget(QtWidgets.QTreeView):
 
 	def __init__(self):
 		super(AssetsTreeWidget, self).__init__()
@@ -34,9 +38,10 @@ class AssetsTreeWidget(QtWidgets.QTreeWidget):
 
 		# Commands
 		self.setDpi(1)
+		self.set_root_path(utils.asset_builds_root(self))
 
 		# Connections ---------------------
-		self.selectionModel().selectionChanged.connect(self._selection_changed)
+		# self.selectionModel().selectionChanged.connect(self._selection_changed)
 
 	def setModel(self, model):
 		"""Override setModel method"""
@@ -59,10 +64,6 @@ class AssetsTreeWidget(QtWidgets.QTreeWidget):
 	def _selection_changed(self):
 		"""
 		Triggered when the folder item changes selection.
-
-		:type selected: list[Folder] or None
-		:type deselected: list[Folder] or None
-		:rtype: None
 		"""
 		path = self.current_folder_selection()
 		print 'init signal'
@@ -113,7 +114,7 @@ class FileSystemModel(QtWidgets.QFileSystemModel):
 
 		self._ignoreFilter = []
 		self._foldersWidget = foldersWidget
-		self.setFilter(QtCore.QDir.AllDirs | QtCore.QDir.NoDotAndDotDot)
+		self.setFilter(QtCore.QDir.Files | QtCore.QDir.NoDotAndDotDot)
 
 
 class SortFilterProxyModel(QtCore.QSortFilterProxyModel):
