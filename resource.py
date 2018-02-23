@@ -7,6 +7,7 @@ PATH = os.path.abspath(__file__)
 DIRNAME = os.path.dirname(PATH)
 RESOURCE_DIRNAME = os.path.join(DIRNAME, "resource")
 
+
 def get(*args):
 	"""
 	Convenience function for returning the resource path.
@@ -15,12 +16,14 @@ def get(*args):
 	"""
 	return Resource().get(*args)
 
+
 def icon(*args, **kwargs):
 	"""
 	Convenience function for returning an Icon object from the given resource name.
 	:rtype: str 
 	"""
 	return Resource().icon(*args, **kwargs)
+
 
 def pixmap(*args, **kwargs):
 	"""
@@ -29,12 +32,14 @@ def pixmap(*args, **kwargs):
 	"""
 	return Resource().pixmap(*args, **kwargs)
 
+
 def style_sheet(*args):
 	"""
 	Convenience function for returning a style sheet css object from the given resource name.
 	:rtype: str 
 	"""
 	return Resource().style_sheet(*args)
+
 
 class Resource(object):
 	DEFAULT_DIRNAME = RESOURCE_DIRNAME
@@ -94,12 +99,12 @@ class Resource(object):
 
 		return p
 
-	def style_sheet(self, css_mod):
+	def style_sheet(self, css_module):
 		"""
 		Return a style sheet css object from the given resource name.
 		:rtype: str 
 		"""
-		imported = getattr(__import__('css', fromlist=[css_mod]), css_mod)
+		imported = getattr(__import__('css', fromlist=[css_module]), css_module)
 
 		return imported.css
 

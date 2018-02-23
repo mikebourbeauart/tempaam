@@ -1,34 +1,30 @@
 import os
 import sys
-
-if "QT_PREFERRED_BINDING" not in os.environ:
-	os.environ["QT_PREFERRED_BINDING"] = os.pathsep.join(
-		["PySide2", "PyQt5", "PySide", "PyQt4"]
-	)
+#
+# if "QT_PREFERRED_BINDING" not in os.environ:
+# 	os.environ["QT_PREFERRED_BINDING"] = os.pathsep.join(
+# 		["PySide2", "PyQt5", "PySide", "PyQt4"]
+# 	)
 
 from Qt import QtCore
-from Qt import QtGui
 from Qt import QtWidgets
 
-AAM_PATH = os.path.join('D:/Git_Stuff/temp-aam/figuringoutapp')
-if not AAM_PATH in sys.path:
+import gui
+import resource
+
+
+AAM_PATH = 'D:/Git_Stuff/temp-aam'
+if AAM_PATH not in sys.path:
 	sys.path.append(AAM_PATH)
 
-PACAKGES_PATH = os.path.join('D:/Git_Stuff/temp-aam/figuringoutapp/', 'packages')
-if not PACAKGES_PATH in sys.path:
-	sys.path.append(PACAKGES_PATH)
+PACKAGES_PATH = os.path.join('D:/Git_Stuff/temp-aam/', 'packages')
+if PACKAGES_PATH not in sys.path:
+	sys.path.append(PACKAGES_PATH)
 
 episode_root = 'S:/STUDIO_TEAMSPACE/Episodes/fake'
 ARMADA_DATA_PATH = os.path.join(episode_root, '_ArmadaData')
-if not ARMADA_DATA_PATH in sys.path:
+if ARMADA_DATA_PATH not in sys.path:
 	sys.path.append(ARMADA_DATA_PATH)
-
-import gui
-import mbqt
-import resource
-
-import aam_settings
-
 
 
 class MainAAM(QtWidgets.QWidget):
@@ -42,8 +38,6 @@ class MainAAM(QtWidgets.QWidget):
 		self.create_gui()
 		self.create_layout()
 		self.create_connections()
-
-		self.show()
 
 	def create_gui(self):
 		self.title_image = QtWidgets.QLabel(self)
@@ -106,14 +100,3 @@ class MainAAM(QtWidgets.QWidget):
 	def create_connections(self):
 		pass
 
-def main():
-
-	aam_settings.settings()
-
-	app = QtWidgets.QApplication(sys.argv)
-	ex = MainAAM()
-	sys.exit(app.exec_())
-
-
-if __name__ == '__main__':
-	main()

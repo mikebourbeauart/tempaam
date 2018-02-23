@@ -1,7 +1,4 @@
 import os
-import sys
-import platform
-import mbqt
 
 
 def readJson(path):
@@ -21,6 +18,7 @@ def readJson(path):
 
 	return data
 
+
 def saveJson(path, data):
 	"""
 	Write a python dict to a json file.
@@ -38,6 +36,7 @@ def saveJson(path, data):
 		data = json.dumps(data, indent=4)
 		f.write(data)
 
+
 def localPath(*args):
 	"""
 	Return the users preferred disc location.
@@ -49,12 +48,14 @@ def localPath(*args):
 
 	return path
 
+
 def data_root():
 	"""
 	Return a Pixmap object from the given resource name.
 	:rtype: str 
 	"""
 	return FtrackData().data_root(*args)
+
 
 def asset_builds_root(*args):
 	"""

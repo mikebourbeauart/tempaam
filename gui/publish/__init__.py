@@ -1,1 +1,1 @@
-from .pub_tab import PubTab
+from pub_tab import PubTab

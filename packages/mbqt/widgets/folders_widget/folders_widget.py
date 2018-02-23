@@ -1,22 +1,20 @@
-import os
-
 from Qt import QtWidgets
 from Qt import QtCore
-from Qt import QtGui
 
 from folders_tree_view import FoldersTreeView
 
 import resource
 
 class FoldersWidget(QtWidgets.QWidget):
-
+	"""Folder selection widget
+	"""
 	def __init__(self):
 		super(FoldersWidget, self).__init__()
 
 		self.create_gui()
 		self.create_layout()
 
-	def create_gui(self):
+		# GUI -----------------------------
 		# Browse folders button
 		self.btn_folders_options = QtWidgets.QPushButton(self)
 		self.btn_folders_options.setIcon(resource.icon('aam_browse_folders'))
@@ -27,9 +25,11 @@ class FoldersWidget(QtWidgets.QWidget):
 
 		self.trw_folders = FoldersTreeView()
 
-	def create_layout(self):
+		# Layout --------------------------
 		self.main_layout = QtWidgets.QVBoxLayout(self)		
 		self.main_layout.addWidget(self.btn_folders_options)
 		self.main_layout.addWidget(self.trw_folders)
 
 		self.setLayout(self.main_layout)
+
+		# Connections ---------------------

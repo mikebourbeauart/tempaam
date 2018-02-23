@@ -28,7 +28,7 @@ WINDOW_OBJECT = 'mainWindow'
 
 class FoldersWidget(QtWidgets.QDialog):
 
-	itemSelectionChanged = QtCore.Signal()
+
 
 	def __init__(self, parent=None):
 		super(FoldersWidget, self).__init__(parent)
@@ -38,34 +38,30 @@ class FoldersWidget(QtWidgets.QDialog):
 		self.setWindowTitle(WINDOW_TITLE)
 		self.setAttribute(QtCore.Qt.WA_DeleteOnClose)
 
-		self.btn_folders_options = None
-		self.tv_folders = None
-		self.trw_files = None
-		self.main_layout = None
-
-		self.create_gui()
-		self.create_layout()
-
-	def create_gui(self):
-		# Browse folders button
-		self.btn_folders_options = QtWidgets.QPushButton(self)
+		# GUI -----------------------------
+		self.btn_folders_options = QtWidgets.QPushButton(self) # Browse folders button
 		self.btn_folders_options.setIconSize(QtCore.QSize(30, 30))
 		self.btn_folders_options.setMaximumHeight(50)
 		self.btn_folders_options.setObjectName('aamBrowseFolders')
 
 		self.tv_folders = FoldersTreeView()
-		self.trw_files = FilesTreeView()
+		self.tv_files = FilesTreeView()
 
-	def create_layout(self):
+		# Layout -------------------------
 		self.main_layout = QtWidgets.QHBoxLayout(self)
 		self.main_layout.addWidget(self.btn_folders_options)
 		self.main_layout.addWidget(self.tv_folders)
-		self.main_layout.addWidget(self.trw_files)
+		self.main_layout.addWidget(self.tv_files)
 
 		self.setLayout(self.main_layout)
 
+		# Connections ---------------------
+		self.tv_folders.itemSelectionChanged.connect(self.tv_files.set_root_path)
+
 
 class FoldersTreeView(QtWidgets.QTreeView):
+
+	itemSelectionChanged = QtCore.Signal(str)
 
 	def __init__(self, parent=None):
 		super(FoldersTreeView, self).__init__(parent)
@@ -92,6 +88,11 @@ class FoldersTreeView(QtWidgets.QTreeView):
 		super(FoldersTreeView, self).setModel(model)
 		self.selection_model = self.selectionModel()
 
+	def current_folder_selection(self):
+		# Get current selection
+		index = self.currentIndex()
+		return self.path_from_index(index)
+
 	def selection_changed(self, index=None):
 		"""
 		Triggered when the folder item changes selection.
@@ -100,11 +101,9 @@ class FoldersTreeView(QtWidgets.QTreeView):
 		:type deselected: list[Folder] or None
 		:rtype: None
 		"""
-
-		# Get current selection
-		index = self.currentIndex()
-
-		print self.path_from_index(index)
+		path = self.current_folder_selection()
+		print 'init signal'
+		self.itemSelectionChanged.emit(path)
 
 	def path_from_index(self, index):
 		"""
@@ -188,6 +187,7 @@ class FilesTreeView(QtWidgets.QTreeView):
 		"""Set the model's root :path:
 		:type path: str
 		"""
+		print path
 		self.model().sourceModel().setRootPath(path)
 		index = self.index_from_path(path)
 		self.setRootIndex(index)

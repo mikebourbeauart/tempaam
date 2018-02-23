@@ -15,9 +15,7 @@ import os
 import logging
 
 from Qt import QtGui
-from Qt import QtWidgets
 
-import mbqt
 import resource
 
 __all__ = ["Folder"]

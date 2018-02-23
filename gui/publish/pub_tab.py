@@ -7,10 +7,9 @@ The PublishTab only reads data from xml files saved in the open file's Publish d
 import os
 
 from Qt import QtCore
-from Qt import QtGui
 from Qt import QtWidgets
 
-import mbqt
+from packages import mbqt
 
 try:
 	from mb_logger import mb_logging as logging
@@ -18,6 +17,7 @@ except:
 	import logging
 
 logger = logging.getLogger(__name__)
+
 
 class PubTab(QtWidgets.QWidget):
 	'''Fills publish UI with contents''' 
