@@ -4,15 +4,13 @@ Module for main PublishTab
 The PublishTab only reads data from xml files saved in the open file's Publish directory
 """
 
-import os
-
 from Qt import QtCore
 from Qt import QtWidgets
 
-from packages.gui import FoldersWidget
-from packages.gui import AssetsWidget
-from packages.gui import SelTabWidget
-from packages.gui import OptionsTabWidget
+from ...gui import folders_widget
+from ...gui import assets_widget
+from ...gui import selection_tab
+from ...gui import options_tab
 
 try:
 	from mb_logger import mb_logging as logging
@@ -38,10 +36,10 @@ class PubTab(QtWidgets.QWidget):
 		self.setObjectName('PublishTab')
 
 		# GUI -----------------------------
-		self.folders_widget = FoldersWidget()
-		self.assets_widget = AssetsWidget()
-		self.tw_selection_info = SelTabWidget()
-		self.tw_options = OptionsTabWidget()
+		self.folders_widget = folders_widget.FoldersWidget()
+		self.assets_widget = assets_widget.AssetsWidget()
+		self.tw_selection_info = selection_tab.SelTabWidget()
+		self.tw_options = options_tab.OptionsTabWidget()
 
 		# Layout -------------------------
 		self.asset_splt = QtWidgets.QSplitter(QtCore.Qt.Horizontal)

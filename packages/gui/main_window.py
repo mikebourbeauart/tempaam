@@ -4,7 +4,7 @@ import sys
 from Qt import QtCore
 from Qt import QtWidgets
 
-from packages import gui
+import publish
 import resource
 
 AAM_PATH = 'D:/Git_Stuff/temp-aam'
@@ -63,7 +63,7 @@ class MainAAM(QtWidgets.QWidget):
 		self.main_tab_widget = QtWidgets.QTabWidget()
 		self.tabw_manager = QtWidgets.QWidget()
 		self.tabw_import = QtWidgets.QWidget()
-		self.tabw_publish = gui.PubTab(self)
+		self.tabw_publish = publish.PubTab(self)
 		self.main_tab_widget.addTab(self.tabw_manager, "Manager")
 		self.main_tab_widget.addTab(self.tabw_import, "Import")
 		self.main_tab_widget.addTab(self.tabw_publish, "Publish")
