@@ -2,32 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98c32ac5-5fa0-4658-90cf-02dd6be5bbfd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/gui/publish/pub_tab.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/publish/pub_tab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmds.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_aam.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/assets_item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_tree_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/assets_tree_widget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/assets_widget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/prep_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/prep_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/prep_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/prep_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/ex.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/ex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/folders_item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_tree_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/folders_tree_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/folders_widget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/qsortfilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/qsortfilter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/options_tab/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/options_tab/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/options_tab/options_tab.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/options_tab/options_tab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/options_tab/options_tab_contents.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/options_tab/options_tab_contents.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/options_tab/options_tab_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/options_tab/options_tab_widget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/prep_popup/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/prep_popup/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/prep_popup/prep_popup.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/prep_popup/prep_popup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/prep_popup/prep_popup_contents.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/prep_popup/prep_popup_contents.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/selection_tab/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/selection_tab/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/selection_tab/sel_tab_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/selection_tab/sel_tab_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mbqt/widgets/selection_tab/sel_tab_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/widgets/selection_tab/sel_tab_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/api_aam/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/assets_item.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/assets_tree_widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/assets_widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/prep_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/prep_view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/folders_item.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/folders_tree_view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/folders_widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/qsortfilter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/options_tab/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/options_tab/options_tab.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/options_tab/options_tab_contents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/options_tab/options_tab_widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/prep_popup/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/prep_popup/prep_popup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/prep_popup/prep_popup_contents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/selection_tab/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/selection_tab/sel_tab_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/api_aam/widgets/selection_tab/sel_tab_widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gui/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gui/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gui/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gui/main_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gui/publish/pub_tab.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gui/publish/pub_tab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/settings_aam/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/settings_aam/__init__.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,51 +48,29 @@
     <SUITE FILE_PATH="coverage/temp_aam$ex.coverage" NAME="ex Coverage Results" MODIFIED="1523394949352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget" />
     <SUITE FILE_PATH="coverage/temp_aam$qsortfilter.coverage" NAME="qsortfilter Coverage Results" MODIFIED="1519343236411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget" />
     <SUITE FILE_PATH="coverage/temp_aam$main_window.coverage" NAME="main_window Coverage Results" MODIFIED="1519404003742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
-    <SUITE FILE_PATH="coverage/temp_aam$main.coverage" NAME="main Coverage Results" MODIFIED="1523395874190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/temp_aam$main.coverage" NAME="main Coverage Results" MODIFIED="1523396884164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="resource.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="38" column="56" lean-forward="true" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
-              <folding>
-                <element signature="e#1#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main_window.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gui/main_window.py">
+        <entry file="file://$PROJECT_DIR$/packages/gui/main_window.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="156">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ex.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/ex.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/settings_aam/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="832">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#1#10#0" expanded="true" />
               </folding>
@@ -93,44 +78,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_window_css.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/css/main_window_css.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            <state relative-caret-position="26">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/css/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/aam_settings/__init__.py">
+      <file leaf-file-name="main_aam.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_aam.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" selection-end-line="56" selection-end-column="20" />
+            <state relative-caret-position="286">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/api_aam/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/gui/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            <state relative-caret-position="156">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pub_tab.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/packages/gui/publish/pub_tab.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#126#135#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -169,6 +158,7 @@
       <find>css</find>
       <find>QTabWidget</find>
       <find>resource.style_sheet</find>
+      <find>gui</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,7 +173,6 @@
         <option value="$PROJECT_DIR$/cmds.py" />
         <option value="$PROJECT_DIR$/gui/publish/__init__.py" />
         <option value="$PROJECT_DIR$/gui/__init__.py" />
-        <option value="$PROJECT_DIR$/packages/__init__.py" />
         <option value="$PROJECT_DIR$/packages/mbqt/__init__.py" />
         <option value="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_item.py" />
         <option value="$PROJECT_DIR$/resource/css/__init__.py" />
@@ -196,7 +185,6 @@
         <option value="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_widget.py" />
         <option value="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_item.py" />
         <option value="$PROJECT_DIR$/packages/mbqt/widgets/assets_widget/assets_tree_widget.py" />
-        <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/resources/css/main_window.css" />
         <option value="$PROJECT_DIR$/packages/mbqt/widgets/folders_widget/folders_tree_view.py" />
         <option value="$PROJECT_DIR$/resources/css/main_window_css.py" />
@@ -204,6 +192,13 @@
         <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/gui/main_window.py" />
+        <option value="$PROJECT_DIR$/packages/api_aam/__init__.py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/packages/settings_aam/__init__.py" />
+        <option value="$PROJECT_DIR$/packages/__init__.py" />
+        <option value="$PROJECT_DIR$/packages/gui/__init__.py" />
+        <option value="$PROJECT_DIR$/packages/gui/main_window.py" />
+        <option value="$PROJECT_DIR$/packages/gui/publish/pub_tab.py" />
       </list>
     </option>
   </component>
@@ -261,31 +256,30 @@
               <item name="temp-aam-pycharm" type="47feb1d3:ProjectViewModuleNode" />
               <item name="temp-aam" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="aam_settings" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="temp-aam" type="b2602c69:ProjectViewProjectNode" />
               <item name="temp-aam-pycharm" type="47feb1d3:ProjectViewModuleNode" />
               <item name="temp-aam" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="api_aam" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="publish" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="temp-aam" type="b2602c69:ProjectViewProjectNode" />
               <item name="temp-aam-pycharm" type="47feb1d3:ProjectViewModuleNode" />
               <item name="temp-aam" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="api_aam" type="462c0819:PsiDirectoryNode" />
-              <item name="widgets" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="selection_tab" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="temp-aam" type="b2602c69:ProjectViewProjectNode" />
               <item name="temp-aam-pycharm" type="47feb1d3:ProjectViewModuleNode" />
               <item name="temp-aam" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="api_aam" type="462c0819:PsiDirectoryNode" />
-              <item name="widgets" type="462c0819:PsiDirectoryNode" />
-              <item name="folders_widget" type="462c0819:PsiDirectoryNode" />
+              <item name="settings_aam" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -302,6 +296,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git_Stuff\temp-aam\packages\gui" />
+      <recent name="D:\Git_Stuff\temp-aam\packages" />
       <recent name="S:\GitStuff\temp-aam-pycharm" />
     </key>
   </component>
@@ -332,7 +328,7 @@
       <option name="ScriptCodeText" value="" />
     </configuration>
     <configuration name="MayaCharm main" type="MAYACHARM_RUN_CONFIGURATION" factoryName="MayaCharm Configuration Factory">
-      <option name="ScriptFilePath" value="D:\Git_Stuff\temp-aam\main.py" />
+      <option name="ScriptFilePath" value="D:\Git_Stuff\temp-aam\main_aam.py" />
       <option name="ScriptCodeText" value="" />
     </configuration>
     <configuration name="ex" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -367,7 +363,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="D:\Git_Stuff\temp-aam\main_aam.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -449,11 +445,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" weight="0.32943678" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32943678" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32943678" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2953125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2953125" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" x="-1532" y="327" width="1034" height="641" id="Maya Log" order="7" sideWeight="0.49947917" weight="0.32943678" />
       <window_info anchor="right" id="Database" order="3" />
@@ -482,30 +478,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/folders_widget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gui/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -530,7 +502,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/ex.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/folders_widget/ex.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
@@ -544,7 +516,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/ex.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/folders_widget/ex.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
@@ -573,7 +545,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/ex.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/folders_widget/ex.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
@@ -587,7 +559,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/ex.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/folders_widget/ex.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
@@ -602,7 +574,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/ex.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/folders_widget/ex.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
@@ -617,7 +589,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/ex.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/folders_widget/ex.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2904">
           <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
@@ -646,7 +618,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/qsortfilter.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/folders_widget/qsortfilter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
@@ -660,14 +632,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/publish/__init__.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/publish/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/assets_item.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/assets_widget/assets_item.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-145">
           <caret column="24" selection-start-column="24" selection-end-column="24" />
@@ -679,45 +651,34 @@
         <state relative-caret-position="-1794" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/assets_tree_widget.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/assets_widget/assets_tree_widget.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1846">
           <caret line="95" column="21" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/assets_widget/assets_widget.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/assets_widget/assets_widget.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/publish/pub_tab.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-951">
-          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gui/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/folders_item.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/folders_widget/folders_item.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/folders_widget.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/folders_widget/folders_widget.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -728,27 +689,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/folders_tree_view.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/folders_widget/folders_tree_view.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
           <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
@@ -762,41 +703,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/aam_settings/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" selection-end-line="56" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding>
-            <element signature="e#1#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gui/main_window.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/main_window_css.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -815,22 +726,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/packages/gui/folders_widget/ex.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="208">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/folders_widget/ex.py">
+    <entry file="file://$PROJECT_DIR$/cmds.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="390">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/api_aam/widgets/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/api_aam/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#1#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_aam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/settings_aam/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/gui/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/gui/main_window.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/gui/publish/pub_tab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding>
+            <element signature="e#126#135#0" expanded="true" />
           </folding>
         </state>
       </provider>

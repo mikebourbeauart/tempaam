@@ -1,17 +1,11 @@
 import os
 import sys
-#
-# if "QT_PREFERRED_BINDING" not in os.environ:
-# 	os.environ["QT_PREFERRED_BINDING"] = os.pathsep.join(
-# 		["PySide2", "PyQt5", "PySide", "PyQt4"]
-# 	)
 
 from Qt import QtCore
 from Qt import QtWidgets
 
 from packages import gui
 import resource
-
 
 AAM_PATH = 'D:/Git_Stuff/temp-aam'
 if AAM_PATH not in sys.path:
@@ -69,7 +63,7 @@ class MainAAM(QtWidgets.QWidget):
 		self.main_tab_widget = QtWidgets.QTabWidget()
 		self.tabw_manager = QtWidgets.QWidget()
 		self.tabw_import = QtWidgets.QWidget()
-		self.tabw_publish =	gui.PubTab(self)
+		self.tabw_publish = gui.PubTab(self)
 		self.main_tab_widget.addTab(self.tabw_manager, "Manager")
 		self.main_tab_widget.addTab(self.tabw_import, "Import")
 		self.main_tab_widget.addTab(self.tabw_publish, "Publish")

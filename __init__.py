@@ -2,7 +2,6 @@
 import os
 import sys
 
-
 __version__ = "1.0.0"
 
 _resource = None
@@ -13,8 +12,8 @@ PACKAGES_PATH = os.path.join(DIRNAME, "packages")
 RESOURCES_PATH = os.path.join(DIRNAME, "resourceS")
 HELP_URL = "http://www.studiolibrary.com"
 
-
 LIBRARY_WIDGET_CLASS = None
+
 
 def setup(path):
     """
