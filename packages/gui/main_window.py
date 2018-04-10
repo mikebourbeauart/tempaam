@@ -9,7 +9,7 @@ import sys
 from Qt import QtCore
 from Qt import QtWidgets
 
-import gui
+from packages import gui
 import resource
 
 

@@ -9,7 +9,7 @@ import os
 from Qt import QtCore
 from Qt import QtWidgets
 
-from packages import mbqt
+from packages import api_aam
 
 try:
 	from mb_logger import mb_logging as logging
@@ -35,10 +35,10 @@ class PubTab(QtWidgets.QWidget):
 		self.setObjectName('PublishTab')
 
 		# GUI -----------------------------
-		self.folders_widget = mbqt.FoldersWidget()
-		self.assets_widget = mbqt.AssetsWidget()
-		self.tw_selection_info = mbqt.SelTabWidget()
-		self.tw_options = mbqt.OptionsTabWidget()
+		self.folders_widget = api_aam.FoldersWidget()
+		self.assets_widget = api_aam.AssetsWidget()
+		self.tw_selection_info = api_aam.SelTabWidget()
+		self.tw_options = api_aam.OptionsTabWidget()
 
 		# Layout -------------------------
 		self.asset_splt = QtWidgets.QSplitter(QtCore.Qt.Horizontal)

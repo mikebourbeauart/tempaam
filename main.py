@@ -2,13 +2,13 @@ import sys
 
 from Qt import QtWidgets
 
-from packages import aam_settings
-from gui import MainAAM
+from packages import settings_aam
+from packages.gui import MainAAM
 
 
 def main():
 
-	aam_settings.settings()
+	settings_aam.settings()
 
 	app = QtWidgets.QApplication(sys.argv)
 	window = MainAAM()
