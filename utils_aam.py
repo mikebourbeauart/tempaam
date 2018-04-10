@@ -66,11 +66,6 @@ def asset_builds_root(*args):
 	return FtrackData().asset_builds_root()
 
 
-
-
-
-
-
 class FtrackData(object):
 	def __init__(self):
 		"""At startup, all ftrack data should be queried for the current task
@@ -142,5 +137,5 @@ class FtrackData(object):
 			'shot_name': self.shot_name,
 			'task_name': self.task_name,
 			'publish_path': self.publish_path,
-			'game_data' : self.game_data
+			'game_data': self.game_data
 		}

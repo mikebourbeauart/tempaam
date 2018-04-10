@@ -113,7 +113,6 @@ class FoldersTreeView(QtWidgets.QTreeView):
 		self.setRootIndex(index)
 
 
-
 class FileSystemModel(QtWidgets.QFileSystemModel):
 
 	def __init__(self, foldersWidget):

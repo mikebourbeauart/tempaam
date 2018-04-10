@@ -29,12 +29,17 @@ css = '''
 		color: #E8E8E8;
 		font-weight:bold;
 	}
+	QTabBar::tab:hover:selected{
+		Background: #2c998e;
+		color: #E8E8E8;
+		font-weight:bold;
+	}
 	QTabBar::tab::!selected{
 		Background: #222222;
 		color: #E8E8E8;
 	}
-	QTabBar::tab::hover{
-		Background: #29C2B2;
+	QTabBar::tab:hover{
+		Background: #2a615f;
 		color: #FFFFFF;
 		font-weight:bold;
 	}
@@ -104,13 +109,13 @@ css = '''
 		height: 30px
 	}
 	QPushButton:hover{
-		Background: #29C2B2;
+		Background: #369593;
 	}
 	QPushButton:hover:pressed{
-		Background: #29C2B2;
+		Background: #2e7a78;
 	}
 	QPushButton:pressed{
-		Background:  #22A194;
+		Background:  #2a615f;
 	}
 
 '''

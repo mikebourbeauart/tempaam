@@ -21,11 +21,11 @@ logger = logging.getLogger(__name__)
 
 
 class PubTab(QtWidgets.QWidget):
-	'''
+	"""
 	Fills publish UI with contents
 
 	Connection gets data from folders_tree_view and sends it to assets_tree_view
-	'''
+	"""
 	
 	def __init__(self, parent=None):
 		super(PubTab, self).__init__(parent)

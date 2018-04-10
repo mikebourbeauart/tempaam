@@ -1,7 +1,7 @@
 from Qt import QtWidgets
 from Qt import QtCore
 
-from folders_tree_view import FoldersTreeView
+import folders_tree_view
 
 import resource
 
@@ -22,7 +22,7 @@ class FoldersWidget(QtWidgets.QWidget):
 		self.btn_folders_options.setStyleSheet(resource.style_sheet('push_button_w_icon_css'))
 		self.btn_folders_options.setObjectName('aamBrowseFolders')
 
-		self.tv_folders = FoldersTreeView()
+		self.tv_folders = folders_tree_view.FoldersTreeView()
 
 		# Layout --------------------------
 		self.main_layout = QtWidgets.QVBoxLayout(self)		
