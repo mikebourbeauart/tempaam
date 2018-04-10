@@ -1,0 +1,1 @@
+from .assets_widget import AssetsWidget
