@@ -3,10 +3,10 @@ import sys
 import logging
 
 
-import utils
+import utils_aam
 
 DEFAULT_FILE_TYPE = "mayaBinary"
-SETTINGS_PATH = utils.localPath("LibraryItem.json")
+SETTINGS_PATH = utils_aam.localPath("LibraryItem.json")
 
 _settings = None
 
@@ -16,7 +16,7 @@ def readSettings():
 
     :rtype: dict
     """
-    return utils.readJson(SETTINGS_PATH)
+    return utils_aam.readJson(SETTINGS_PATH)
 
 def settings():
     """

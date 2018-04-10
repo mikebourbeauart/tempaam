@@ -73,47 +73,47 @@ def asset_builds_root(*args):
 
 class FtrackData(object):
 	def __init__(self):
-		'''At startup, all ftrack data should be queried for the current task
-		
+		"""At startup, all ftrack data should be queried for the current task
+
 		When the task is switched, a method should be used to dump the old data and
 		cache the new data for future requests
 
 		Would be great to do this on a separate thead in the background
-		'''
+		"""
 
 		global _ftrack_data
 
 
 	def data_root(self):
-		'''Root path for Armada's data
-		
+		"""Root path for Armada's data
+
 		:param str data_path: Publish path
 
 		returns: "path/to/_ArmadaDAta"
 		return type str
-		'''
+		"""
 
-		return "S:/STUDIO_TEAMSPACE/Episodes/fake/_ArmadaData"
+		return "S:/STUDIO_TEAMSPACE/fake/_ArmadaData"
 
 	def publish_data_root(self):
-		'''Root path for Armada's publish data
-		
+		"""Root path for Armada's publish data
+
 		:param str data_path: Publish path
 
 		returns: "path/to/_ArmadaDAta"
 		return type str
-		'''
+		"""
 
 		return os.path.join(self.data_root(), 'PublishData')
 
 	def asset_builds_root(self):
-		'''Root path for current episode's project hierarchy
-		
+		"""Root path for current episode's project hierarchy
+
 		:param str data_path: Publish path
 
 		returns: "path/to/_ArmadaDAta"
 		return type str
-		'''
+		"""
 
 		return os.path.join(self.publish_data_root(), 'Asset_Builds')
 
@@ -126,15 +126,15 @@ class FtrackData(object):
 		return type str
 		'''
 
-		return "S:/STUDIO_TEAMSPACE/Episodes/fake/ANOTHER_SEQUENCE/Publish/CharAnims'"
+		return "S:/STUDIO_TEAMSPACE/fake/ANOTHER_SEQUENCE/Publish/CharAnims'"
 
 	def query_ftrack_data(self):
-		'''This will query all the ftrack data, but for now i'm hardcoding values
-		'''
+		"""This will query all the ftrack data, but for now i'm hardcoding values
+		"""
 		self.episode = 'fake'
 		self.shot_name = 'CharAnims'
 		self.task_name = 'CharacterAAnims'
-		self.publish_path = 'S:/STUDIO_TEAMSPACE/Episodes/fake/ANOTHER_SEQUENCE/Publish/CharAnims'  
+		self.publish_path = 'S:/STUDIO_TEAMSPACE/fake/ANOTHER_SEQUENCE/Publish/CharAnims'
 		self.game_data = ''
 
 		return {

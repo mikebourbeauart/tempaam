@@ -21,7 +21,7 @@ PACKAGES_PATH = os.path.join('D:/Git_Stuff/temp-aam/', 'packages')
 if PACKAGES_PATH not in sys.path:
 	sys.path.append(PACKAGES_PATH)
 
-episode_root = 'S:/STUDIO_TEAMSPACE/Episodes/fake'
+episode_root = 'S:/STUDIO_TEAMSPACE/fake'
 ARMADA_DATA_PATH = os.path.join(episode_root, '_ArmadaData')
 if ARMADA_DATA_PATH not in sys.path:
 	sys.path.append(ARMADA_DATA_PATH)
@@ -34,18 +34,14 @@ class MainAAM(QtWidgets.QWidget):
 
 		self.resize(900, 800)  
 		self.setStyleSheet(resource.style_sheet('main_window_css'))
-		
-		self.create_gui()
-		self.create_layout()
-		self.create_connections()
 
-	def create_gui(self):
+		# GUI -----------------------------
 		self.title_image = QtWidgets.QLabel(self)
 		self.title_image.setPixmap(resource.pixmap('aam_banner_left'))
 
 		# Address bar
 		self.le_address_bar = QtWidgets.QLineEdit()
-		self.le_address_bar.setText('S:/STUDIO_TEAMSPACE/Episodes/fake/Asset_Builds/Character/CharacterA/Publish')
+		self.le_address_bar.setText('S:/STUDIO_TEAMSPACE/fake/Asset_Builds/Character/CharacterA/Publish')
 		self.le_address_bar.setReadOnly(True)
 		self.le_address_bar.setObjectName('aamAddressBar')
 
@@ -79,8 +75,7 @@ class MainAAM(QtWidgets.QWidget):
 		self.main_tab_widget.addTab(self.tabw_publish, "Publish")
 		self.main_tab_widget.setCurrentIndex(2)
 
-
-	def create_layout(self):
+		# Layout -----------------------------
 		
 		title_image_layout = QtWidgets.QBoxLayout(QtWidgets.QBoxLayout.LeftToRight)
 		title_image_layout.addWidget(self.title_image)
@@ -96,7 +91,5 @@ class MainAAM(QtWidgets.QWidget):
 		self.main_layout.addWidget(self.main_tab_widget)
 
 		self.setLayout(self.main_layout)
-		
-	def create_connections(self):
-		pass
+
 

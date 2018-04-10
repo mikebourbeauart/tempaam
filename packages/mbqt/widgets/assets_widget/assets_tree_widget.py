@@ -3,7 +3,7 @@ from Qt import QtWidgets
 from Qt import QtCore
 
 import assets_item
-import utils
+import utils_aam
 
 
 class AssetsTreeWidget(QtWidgets.QTreeView):
@@ -38,7 +38,7 @@ class AssetsTreeWidget(QtWidgets.QTreeView):
 
 		# Commands
 		self.setDpi(1)
-		self.set_root_path(utils.asset_builds_root(self))
+		self.set_root_path(utils_aam.asset_builds_root(self))
 
 		# Connections ---------------------
 		# self.selectionModel().selectionChanged.connect(self._selection_changed)

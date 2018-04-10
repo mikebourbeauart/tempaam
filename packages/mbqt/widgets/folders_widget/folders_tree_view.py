@@ -4,7 +4,7 @@ from Qt import QtCore
 
 
 import folders_item
-import utils
+import utils_aam
 
 
 class FoldersTreeView(QtWidgets.QTreeView):
@@ -36,14 +36,13 @@ class FoldersTreeView(QtWidgets.QTreeView):
 		self.hideColumn(2)
 		self.hideColumn(3)
 		self.setFrameShape(QtWidgets.QFrame.NoFrame)
-		self.setSelectionMode(QtWidgets.QTreeWidget.ExtendedSelection)
 		self.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
 		self.setVerticalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
 		self.setMinimumWidth(200)
 		self.setMaximumWidth(600)
 
 		# Commands
-		self.set_root_path(utils.asset_builds_root(self))
+		self.set_root_path(utils_aam.asset_builds_root(self))
 		self.setDpi(1)
 
 		# Connections ---------------------
